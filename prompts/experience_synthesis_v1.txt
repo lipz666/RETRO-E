@@ -1,0 +1,4 @@
+From the supplied real or high-quality synthetic routes, distill a compact set of transferable retrosynthetic experience. Do not memorize route answers for individual targets and do not quote many molecule-specific examples. Extract strategic decisions that would guide planning for unseen molecules: bond-disconnection choice, convergence, skeleton construction, ordering of functional-group installation, protecting groups, unstable intermediates, chemoselectivity, late-stage functionalization, precursor accessibility, and local choices that create downstream difficulty.
+
+Write a numbered section titled SYNTHETIC EXPERIENCE. Keep it general, operational, and approximately 1000 tokens. Exclude tools, workflows, reaction databases, target-specific SMILES, and generic textbook facts that do not change route decisions.
+

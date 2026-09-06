@@ -1,0 +1,86 @@
+# RETRO-E v2_pilot — exploratory phase config (plan v2 section 15).
+# Round 1's config/experiment.toml is frozen and must not be edited: its protocol hashes are
+# re-derivable only from results/manifests/round1_frozen/.
+#
+# Deviation from plan section 15: the plan names configs/v2_pilot.yaml. This project's loader
+# reads TOML, so the file is TOML in the existing config/ directory. Field names are unchanged.
+
+[api]
+base_url = "https://vps.lpzproxy.xyz"
+chat_completions_path = "/v1/chat/completions"
+models_path = "/v1/models"
+api_key_env = "RETRO_E_API_KEY"
+# Round-1 compatibility fallbacks; v2 code paths resolve models through [roles] instead.
+generator_model_env = "RETRO_E_GENERATOR_MODEL"
+judge_model_env = "RETRO_E_JUDGE_MODEL"
+timeout_seconds = 300.0
+max_retries = 4
+
+# Locked from the 2026-09-06 startup calibration (95 live calls on real Stage-5 pairs).
+# Measured cost/robustness per judge call, judge_v2 prompt, 10 pairs judged in both orders:
+#   gemini-3.8-flash-high  2869 hidden reasoning tok, 5370 total, 90% order-flip consistent
+#   gemini-3.7-flash-high   638 hidden reasoning tok, 3139 total, 80% order-flip consistent
+#   claude-haiku-4-5           0 hidden reasoning tok, 3268 total, 40% consistent, 75% A-rate
+#   gpt-5.6-luna            1213 hidden reasoning tok, 4091 total (external audit reserve)
+# 3.8 generates, 3.7 judges: different model IDs, and 3.7 is 1.7x cheaper per judge call.
+# claude-haiku-4-5 was rejected as a cheap cross-family judge: it reads position, not chemistry.
+[roles]
+generator = "RETRO_E_V2_GENERATOR_MODEL"
+mutator = "RETRO_E_V2_MUTATOR_MODEL"
+judge = "RETRO_E_V2_JUDGE_MODEL"
+external_generator = "RETRO_E_V2_EXTERNAL_GENERATOR_MODEL"
+external_judge = "RETRO_E_V2_EXTERNAL_JUDGE_MODEL"
+
+[generation]
+temperature = 0.3
+top_p = 1.0
+max_tokens = 16000
+n_routes = 1
+samples_per_target = 2
+seed = 20260906
+
+[judge]
+temperature = 0.0
+top_p = 1.0
+# judge_v3 emits a JSON object rather than one DECISION line; 150 truncates it. Successful
+# replies use at most ~121 visible tokens, but hidden reasoning reached 4081 on this task and
+# can eat the output budget: at max_tokens=600 roughly 1% of replies came back truncated
+# mid-object. Raised with headroom; parse_judgment also salvages a truncated decision.
+max_tokens = 2500
+# Plan section 5.2: spend budget on independent targets and training runs, not repeat votes.
+# One vote per pair, with a predeclared 10% order-reversal audit instead of majority-of-three.
+runs_per_pair = 1
+seed = 20260907
+
+[paths]
+system_prompt = "prompts/system_v1.txt"
+judge_prompt = "prompts/judge_v3.txt"
+experience_synthesis_prompt = "prompts/experience_synthesis_v1.txt"
+experience_e0 = "contexts/experience_E0.md"
+experience_e_star = "contexts/experience_E_star.md"
+experience_control = "contexts/experience_control.md"
+train_targets = "data/processed/train_targets.jsonl"
+test_targets = "data/v2/holdout_new_targets.jsonl"
+experience_source_routes = "data/processed/experience_source_routes.jsonl"
+optimizer_targets = "data/processed/optimizer_targets.jsonl"
+selection_targets = "data/processed/selection_targets.jsonl"
+pilot_targets = "data/v2/external_audit_panel.jsonl"
+h1_screen_targets = "data/v2/dev_new_targets.jsonl"
+results_dir = "results/v2"
+
+[context]
+target_tokens = 800
+max_e_star_ratio = 1.10
+tokenizer = "o200k_base"
+
+[protocol]
+system_prompt_version = "system_v1"
+judge_prompt_version = "judge_v3"
+conditions = ["baseline", "E0", "reflective", "search_only", "instruction_opt"]
+primary_comparisons = [
+    "reflective_vs_baseline",
+    "reflective_vs_E0",
+    "reflective_vs_search_only",
+    "reflective_vs_instruction_opt",
+]
+control_comparison = "reflective_vs_search_only"

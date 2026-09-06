@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RETRO-E experience-source route",
+  "type": "object",
+  "required": [
+    "route_id",
+    "target_smiles",
+    "steps",
+    "source_type",
+    "source_id",
+    "source_entry",
+    "smiles_validated",
+    "extraction_confidence",
+    "needs_human_review",
+    "quality_notes"
+  ],
+  "properties": {
+    "route_id": {"type": "string", "minLength": 1},
+    "target_smiles": {"type": "string", "minLength": 1},
+    "steps": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "required": ["step_id", "product_smiles", "precursor_smiles", "reaction_class"],
+        "properties": {
+          "step_id": {"type": "integer", "minimum": 1},
+          "product_smiles": {"type": "string", "minLength": 1},
+          "precursor_smiles": {
+            "type": "array",
+            "minItems": 1,
+            "items": {"type": "string", "minLength": 1}
+          },
+          "reaction_class": {"type": ["string", "null"]},
+          "conditions": {"type": ["string", "null"]},
+          "yield_pct": {"type": ["number", "null"], "minimum": 0, "maximum": 100},
+          "yield_type": {"type": ["string", "null"]},
+          "evidence_text": {"type": ["string", "null"]}
+        },
+        "additionalProperties": true
+      }
+    },
+    "source_type": {"type": "string", "minLength": 1},
+    "source_id": {"type": "string", "minLength": 1},
+    "source_title": {"type": ["string", "null"]},
+    "source_doi": {"type": ["string", "null"]},
+    "source_url": {"type": ["string", "null"]},
+    "source_entry": {"type": "string", "minLength": 1},
+    "smiles_validated": {"type": "boolean"},
+    "extraction_confidence": {"enum": ["high", "medium", "low"]},
+    "needs_human_review": {"type": "boolean"},
+    "quality_notes": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": true
+}

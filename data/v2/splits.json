@@ -1,0 +1,329 @@
+{
+  "distribution_check": {
+    "note": "Round-1 pool vs unused pool, same filters; near-identical distributions are why ood_probe cannot be drawn here.",
+    "round1_selected": {
+      "heavy_atoms": {
+        "max": 43,
+        "median": 31,
+        "min": 18
+      },
+      "max_depth": {
+        "max": 9,
+        "median": 5,
+        "min": 3
+      }
+    },
+    "v2_available_pool": {
+      "heavy_atoms": {
+        "max": 43,
+        "median": 30,
+        "min": 18
+      },
+      "max_depth": {
+        "max": 10,
+        "median": 5,
+        "min": 3
+      }
+    }
+  },
+  "isolation_audit": {
+    "canonical_smiles_leaks_vs_round1": [],
+    "dev_holdout_scaffold_overlap": 0,
+    "internal_scaffold_overlap_within_v2": 0,
+    "murcko_scaffold_leaks_vs_round1": [],
+    "passed": true
+  },
+  "limitations": [
+    "Scaffold disjointness does not bound analog similarity; see nearest_neighbour_audit.",
+    "PaRoutes routes are patent-derived benchmark routes, not validated procedures.",
+    "Public patent routes may sit inside the frozen model's pretraining data; structural isolation from round 1 does not establish freedom from pretraining contamination."
+  ],
+  "nearest_neighbour_audit": {
+    "count_above_0.5": 4,
+    "count_above_0.7": 0,
+    "max": 0.64,
+    "median": 0.2512,
+    "metric": "Morgan r=2, 2048 bits, Tanimoto; max over all 500 round-1 targets",
+    "n": 140,
+    "p90": 0.3263,
+    "top10_nearest": [
+      {
+        "max_tanimoto": 0.64,
+        "nearest_round1_target": "paroutes-n1-train-0061",
+        "target_id": "paroutes-n1-holdout_new-0036"
+      },
+      {
+        "max_tanimoto": 0.6333,
+        "nearest_round1_target": "paroutes-n1-train-0062",
+        "target_id": "paroutes-n1-dev_new-0004"
+      },
+      {
+        "max_tanimoto": 0.5972,
+        "nearest_round1_target": "paroutes-n1-test-0040",
+        "target_id": "paroutes-n1-holdout_new-0006"
+      },
+      {
+        "max_tanimoto": 0.5366,
+        "nearest_round1_target": "paroutes-n1-train-0174",
+        "target_id": "paroutes-n1-holdout_new-0018"
+      },
+      {
+        "max_tanimoto": 0.4835,
+        "nearest_round1_target": "paroutes-n1-train-0027",
+        "target_id": "paroutes-n1-dev_new-0028"
+      },
+      {
+        "max_tanimoto": 0.4605,
+        "nearest_round1_target": "paroutes-n1-test-0043",
+        "target_id": "paroutes-n1-holdout_new-0033"
+      },
+      {
+        "max_tanimoto": 0.4286,
+        "nearest_round1_target": "paroutes-n1-test-0029",
+        "target_id": "paroutes-n1-holdout_new-0042"
+      },
+      {
+        "max_tanimoto": 0.4177,
+        "nearest_round1_target": "paroutes-n1-test-0062",
+        "target_id": "paroutes-n1-dev_new-0023"
+      },
+      {
+        "max_tanimoto": 0.4024,
+        "nearest_round1_target": "paroutes-n1-test-0085",
+        "target_id": "paroutes-n1-dev_new-0024"
+      },
+      {
+        "max_tanimoto": 0.402,
+        "nearest_round1_target": "paroutes-n1-train-0040",
+        "target_id": "paroutes-n1-dev_new-0060"
+      }
+    ]
+  },
+  "phase": "v2_pilot",
+  "pool": {
+    "drawn": 140,
+    "eligible_candidates": 967,
+    "reserve_left": 265,
+    "round1_scaffolds_consumed": 500,
+    "unique_unused_scaffolds_available": 405
+  },
+  "round1_seed_replayed": 20260902,
+  "source": {
+    "doi": "10.5281/zenodo.7341155",
+    "raw_file": "data/raw/paroutes_v2/ref_routes_n1.json",
+    "raw_sha256": "b818f2115ce10da51f84bf13f19dc2206863b1b074ef348017de258e9e1bff02",
+    "title": "PaRoutes 2.0 n1 reference routes",
+    "url": "https://zenodo.org/records/7341155"
+  },
+  "splits": {
+    "dev_new": {
+      "file": "data/v2/dev_new_targets.jsonl",
+      "n": 80,
+      "role": "v2 method screening, module intervention (E4); may be looked at repeatedly",
+      "target_ids": [
+        "paroutes-n1-dev_new-0001",
+        "paroutes-n1-dev_new-0002",
+        "paroutes-n1-dev_new-0003",
+        "paroutes-n1-dev_new-0004",
+        "paroutes-n1-dev_new-0005",
+        "paroutes-n1-dev_new-0006",
+        "paroutes-n1-dev_new-0007",
+        "paroutes-n1-dev_new-0008",
+        "paroutes-n1-dev_new-0009",
+        "paroutes-n1-dev_new-0010",
+        "paroutes-n1-dev_new-0011",
+        "paroutes-n1-dev_new-0012",
+        "paroutes-n1-dev_new-0013",
+        "paroutes-n1-dev_new-0014",
+        "paroutes-n1-dev_new-0015",
+        "paroutes-n1-dev_new-0016",
+        "paroutes-n1-dev_new-0017",
+        "paroutes-n1-dev_new-0018",
+        "paroutes-n1-dev_new-0019",
+        "paroutes-n1-dev_new-0020",
+        "paroutes-n1-dev_new-0021",
+        "paroutes-n1-dev_new-0022",
+        "paroutes-n1-dev_new-0023",
+        "paroutes-n1-dev_new-0024",
+        "paroutes-n1-dev_new-0025",
+        "paroutes-n1-dev_new-0026",
+        "paroutes-n1-dev_new-0027",
+        "paroutes-n1-dev_new-0028",
+        "paroutes-n1-dev_new-0029",
+        "paroutes-n1-dev_new-0030",
+        "paroutes-n1-dev_new-0031",
+        "paroutes-n1-dev_new-0032",
+        "paroutes-n1-dev_new-0033",
+        "paroutes-n1-dev_new-0034",
+        "paroutes-n1-dev_new-0035",
+        "paroutes-n1-dev_new-0036",
+        "paroutes-n1-dev_new-0037",
+        "paroutes-n1-dev_new-0038",
+        "paroutes-n1-dev_new-0039",
+        "paroutes-n1-dev_new-0040",
+        "paroutes-n1-dev_new-0041",
+        "paroutes-n1-dev_new-0042",
+        "paroutes-n1-dev_new-0043",
+        "paroutes-n1-dev_new-0044",
+        "paroutes-n1-dev_new-0045",
+        "paroutes-n1-dev_new-0046",
+        "paroutes-n1-dev_new-0047",
+        "paroutes-n1-dev_new-0048",
+        "paroutes-n1-dev_new-0049",
+        "paroutes-n1-dev_new-0050",
+        "paroutes-n1-dev_new-0051",
+        "paroutes-n1-dev_new-0052",
+        "paroutes-n1-dev_new-0053",
+        "paroutes-n1-dev_new-0054",
+        "paroutes-n1-dev_new-0055",
+        "paroutes-n1-dev_new-0056",
+        "paroutes-n1-dev_new-0057",
+        "paroutes-n1-dev_new-0058",
+        "paroutes-n1-dev_new-0059",
+        "paroutes-n1-dev_new-0060",
+        "paroutes-n1-dev_new-0061",
+        "paroutes-n1-dev_new-0062",
+        "paroutes-n1-dev_new-0063",
+        "paroutes-n1-dev_new-0064",
+        "paroutes-n1-dev_new-0065",
+        "paroutes-n1-dev_new-0066",
+        "paroutes-n1-dev_new-0067",
+        "paroutes-n1-dev_new-0068",
+        "paroutes-n1-dev_new-0069",
+        "paroutes-n1-dev_new-0070",
+        "paroutes-n1-dev_new-0071",
+        "paroutes-n1-dev_new-0072",
+        "paroutes-n1-dev_new-0073",
+        "paroutes-n1-dev_new-0074",
+        "paroutes-n1-dev_new-0075",
+        "paroutes-n1-dev_new-0076",
+        "paroutes-n1-dev_new-0077",
+        "paroutes-n1-dev_new-0078",
+        "paroutes-n1-dev_new-0079",
+        "paroutes-n1-dev_new-0080"
+      ]
+    },
+    "external_audit_panel": {
+      "drawn": "stratified on target_heavy_atoms tertile x reference_route_depth median",
+      "drawn_before_any_v2_api_call": true,
+      "file": "data/v2/external_audit_panel.jsonl",
+      "n": 40,
+      "role": "subset of dev_new reserved for the non-Gemini audit and expert sampling",
+      "target_ids": [
+        "paroutes-n1-dev_new-0001",
+        "paroutes-n1-dev_new-0002",
+        "paroutes-n1-dev_new-0003",
+        "paroutes-n1-dev_new-0004",
+        "paroutes-n1-dev_new-0005",
+        "paroutes-n1-dev_new-0006",
+        "paroutes-n1-dev_new-0007",
+        "paroutes-n1-dev_new-0008",
+        "paroutes-n1-dev_new-0009",
+        "paroutes-n1-dev_new-0010",
+        "paroutes-n1-dev_new-0011",
+        "paroutes-n1-dev_new-0012",
+        "paroutes-n1-dev_new-0013",
+        "paroutes-n1-dev_new-0014",
+        "paroutes-n1-dev_new-0015",
+        "paroutes-n1-dev_new-0016",
+        "paroutes-n1-dev_new-0017",
+        "paroutes-n1-dev_new-0018",
+        "paroutes-n1-dev_new-0019",
+        "paroutes-n1-dev_new-0020",
+        "paroutes-n1-dev_new-0021",
+        "paroutes-n1-dev_new-0022",
+        "paroutes-n1-dev_new-0023",
+        "paroutes-n1-dev_new-0024",
+        "paroutes-n1-dev_new-0025",
+        "paroutes-n1-dev_new-0026",
+        "paroutes-n1-dev_new-0027",
+        "paroutes-n1-dev_new-0028",
+        "paroutes-n1-dev_new-0029",
+        "paroutes-n1-dev_new-0030",
+        "paroutes-n1-dev_new-0031",
+        "paroutes-n1-dev_new-0032",
+        "paroutes-n1-dev_new-0033",
+        "paroutes-n1-dev_new-0034",
+        "paroutes-n1-dev_new-0035",
+        "paroutes-n1-dev_new-0036",
+        "paroutes-n1-dev_new-0037",
+        "paroutes-n1-dev_new-0038",
+        "paroutes-n1-dev_new-0039",
+        "paroutes-n1-dev_new-0040"
+      ]
+    },
+    "holdout_new": {
+      "file": "data/v2/holdout_new_targets.jsonl",
+      "n": 60,
+      "role": "frozen final comparison; max_reveals=1",
+      "target_ids": [
+        "paroutes-n1-holdout_new-0001",
+        "paroutes-n1-holdout_new-0002",
+        "paroutes-n1-holdout_new-0003",
+        "paroutes-n1-holdout_new-0004",
+        "paroutes-n1-holdout_new-0005",
+        "paroutes-n1-holdout_new-0006",
+        "paroutes-n1-holdout_new-0007",
+        "paroutes-n1-holdout_new-0008",
+        "paroutes-n1-holdout_new-0009",
+        "paroutes-n1-holdout_new-0010",
+        "paroutes-n1-holdout_new-0011",
+        "paroutes-n1-holdout_new-0012",
+        "paroutes-n1-holdout_new-0013",
+        "paroutes-n1-holdout_new-0014",
+        "paroutes-n1-holdout_new-0015",
+        "paroutes-n1-holdout_new-0016",
+        "paroutes-n1-holdout_new-0017",
+        "paroutes-n1-holdout_new-0018",
+        "paroutes-n1-holdout_new-0019",
+        "paroutes-n1-holdout_new-0020",
+        "paroutes-n1-holdout_new-0021",
+        "paroutes-n1-holdout_new-0022",
+        "paroutes-n1-holdout_new-0023",
+        "paroutes-n1-holdout_new-0024",
+        "paroutes-n1-holdout_new-0025",
+        "paroutes-n1-holdout_new-0026",
+        "paroutes-n1-holdout_new-0027",
+        "paroutes-n1-holdout_new-0028",
+        "paroutes-n1-holdout_new-0029",
+        "paroutes-n1-holdout_new-0030",
+        "paroutes-n1-holdout_new-0031",
+        "paroutes-n1-holdout_new-0032",
+        "paroutes-n1-holdout_new-0033",
+        "paroutes-n1-holdout_new-0034",
+        "paroutes-n1-holdout_new-0035",
+        "paroutes-n1-holdout_new-0036",
+        "paroutes-n1-holdout_new-0037",
+        "paroutes-n1-holdout_new-0038",
+        "paroutes-n1-holdout_new-0039",
+        "paroutes-n1-holdout_new-0040",
+        "paroutes-n1-holdout_new-0041",
+        "paroutes-n1-holdout_new-0042",
+        "paroutes-n1-holdout_new-0043",
+        "paroutes-n1-holdout_new-0044",
+        "paroutes-n1-holdout_new-0045",
+        "paroutes-n1-holdout_new-0046",
+        "paroutes-n1-holdout_new-0047",
+        "paroutes-n1-holdout_new-0048",
+        "paroutes-n1-holdout_new-0049",
+        "paroutes-n1-holdout_new-0050",
+        "paroutes-n1-holdout_new-0051",
+        "paroutes-n1-holdout_new-0052",
+        "paroutes-n1-holdout_new-0053",
+        "paroutes-n1-holdout_new-0054",
+        "paroutes-n1-holdout_new-0055",
+        "paroutes-n1-holdout_new-0056",
+        "paroutes-n1-holdout_new-0057",
+        "paroutes-n1-holdout_new-0058",
+        "paroutes-n1-holdout_new-0059",
+        "paroutes-n1-holdout_new-0060"
+      ]
+    },
+    "ood_probe": {
+      "n": 0,
+      "reason": "The unused PaRoutes n1 pool is distributionally identical to the pool round 1 drew from (see distribution_check), so a draw from it would be additional in-distribution data mislabelled as a distribution shift. An ood_probe needs a genuinely different source (e.g. PaRoutes n5, or non-patent routes) and must declare its own OOD definition.",
+      "status": "not_built"
+    }
+  },
+  "v2_seed": 20260906
+}

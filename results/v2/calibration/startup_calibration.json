@@ -1,0 +1,125 @@
+{
+  "date": "2026-09-06",
+  "decisions_locked": {
+    "external_generator_and_judge": "gpt-5.6-luna",
+    "generator": "gemini-3.8-flash-high",
+    "judge": "gemini-3.7-flash-high",
+    "judge_prompt": "judge_v3",
+    "mutator": "gemini-3.8-flash-high",
+    "rejected": {
+      "claude-haiku-4-5-20251001": "Zero hidden reasoning tokens and 2.1s latency made it the obvious cheap cross-family judge, but 40% order-flip consistency and a 75% A-rate mean it reads position more than chemistry.",
+      "gemini-3.8-flash-high as judge": "Most order-robust of the three (90%), but 2869 hidden reasoning tokens per call, 4.5x gemini-3.7 and more total tokens than gpt-5.6-luna. Assigned to generation instead.",
+      "gpt-5.4-mini": "4160 hidden reasoning tokens and 61s latency; the most expensive and slowest candidate tested."
+    },
+    "votes_per_pair": 1
+  },
+  "input": "Real Stage-5 route pairs (E_star vs baseline, sample 0) and the real judge prompt. No new routes generated.",
+  "open_items": [
+    "gemini-3.8-flash-high generation-side reasoning cost is not yet measured; on the judge task it burned 4.5x gemini-3.7, so the E1 route-generation budget could be materially larger than the round-1 figure of ~8k tokens per generation.",
+    "Order-flip consistency was measured with judge_v2. It should be re-measured on judge_v3 as part of the predeclared 10% order-reversal audit."
+  ],
+  "phase": "v2_pilot",
+  "probes": {
+    "judge_cost_probe": {
+      "calls": 35,
+      "design": "5 real pairs x 7 candidate judge models, judge_v2 prompt, fixed A/B order",
+      "per_call_means": {
+        "claude-haiku-4-5-20251001": {
+          "completion_tokens": 7,
+          "latency_s": 2.1,
+          "parsed": "5/5",
+          "reasoning_tokens": 0,
+          "total_tokens": 3268
+        },
+        "gemini-3.6-flash-high": {
+          "completion_tokens": 4,
+          "latency_s": 7.4,
+          "parsed": "5/5",
+          "reasoning_tokens": 2067,
+          "total_tokens": 4569
+        },
+        "gemini-3.7-flash-high": {
+          "completion_tokens": 4,
+          "latency_s": 7.2,
+          "parsed": "5/5",
+          "reasoning_tokens": 638,
+          "total_tokens": 3139
+        },
+        "gemini-3.8-flash-high": {
+          "completion_tokens": 4,
+          "latency_s": 16.2,
+          "parsed": "5/5",
+          "reasoning_tokens": 2869,
+          "total_tokens": 5370
+        },
+        "gpt-5.4-mini": {
+          "completion_tokens": 4170,
+          "latency_s": 61.2,
+          "parsed": "5/5",
+          "reasoning_tokens": 4160,
+          "total_tokens": 7038
+        },
+        "gpt-5.5": {
+          "completion_tokens": 1069,
+          "latency_s": 22.3,
+          "parsed": "5/5",
+          "reasoning_tokens": 1059,
+          "total_tokens": 3938
+        },
+        "gpt-5.6-luna": {
+          "completion_tokens": 1223,
+          "latency_s": 24.7,
+          "parsed": "5/5",
+          "reasoning_tokens": 1213,
+          "total_tokens": 4091
+        }
+      },
+      "raw": "results/v2/calibration/judge_cost_probe_raw.json",
+      "script": "scripts/v2_calibrate.py --probe cost"
+    },
+    "judge_v3_parse_check": {
+      "calls": 12,
+      "comparison": "judge_v2 on the same judge model cost 3139 total tokens/call; judge_v3 costs 3526 (+12%) and adds the section 5.3 behavioural fields.",
+      "design": "12 real pairs, judge_v3 structured prompt, gemini-3.7-flash-high, max_tokens=600",
+      "results": {
+        "decisive_step_present": "11/12",
+        "fatal_flag_raised": "2/12",
+        "insufficient_information": "0/12",
+        "mean_latency_s": 7.4,
+        "mean_reasoning_tokens": 927,
+        "mean_total_tokens": 3526,
+        "mean_visible_completion_tokens": 90,
+        "parsed": "12/12",
+        "structured": "12/12",
+        "unknown_error_tags": 0
+      },
+      "script": "scripts/v2_calibrate.py --probe judge_v3"
+    },
+    "order_bias_probe": {
+      "calls": 60,
+      "design": "10 real pairs x 3 candidate judges x both A/B orders, judge_v2 prompt",
+      "n_note": "10 pairs per model: these are coarse rankings, not precise bias estimates.",
+      "note": "Aggregates only; per-call rows were not persisted. Re-run the script to regenerate.",
+      "results": {
+        "claude-haiku-4-5-20251001": {
+          "a_rate": 0.75,
+          "e_star_win_rate": 0.6,
+          "order_flip_consistency": 0.4
+        },
+        "gemini-3.7-flash-high": {
+          "a_rate": 0.6,
+          "e_star_win_rate": 0.7,
+          "order_flip_consistency": 0.8
+        },
+        "gemini-3.8-flash-high": {
+          "a_rate": 0.55,
+          "e_star_win_rate": 0.65,
+          "order_flip_consistency": 0.9
+        }
+      },
+      "script": "scripts/v2_calibrate.py --probe order"
+    }
+  },
+  "purpose": "Plan v2 section 3.1 startup calibration: lock model IDs, usage, latency, parse rate before any v2 experiment call.",
+  "total_live_calls": 107
+}

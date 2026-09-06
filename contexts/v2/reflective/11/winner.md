@@ -1,0 +1,19 @@
+SYNTHETIC EXPERIENCE
+
+1. Prioritize strategic disconnections that maximize core structural simplification in a single operation, relying on dependable transformations rather than late-stage peripheral functionalization.
+2. Design convergent routes that join complex fragments late, but balance theoretical convergence against coupling fidelity; prefer robust semi-convergent sequences over forcing fragile, unreactive, or poorly soluble fragments into demanding assemblies.
+3. Minimize the longest linear sequence by distributing complexity across parallel branches, balancing branch count against total steps to avoid excess isolation operations when a concise linear sequence is more step-economical.
+4. Anchor retrosynthetic disconnections on commercially abundant, scalable raw materials, avoiding exotic precursors requiring lengthy de novo preparations that create scale-up bottlenecks.
+5. Sequence transformations by reaction condition severity, introducing sensitive, catalyst-poisoning, or Lewis-basic heteroatoms after harsh cyclizations, annulations, or halogenations, or masking them until the framework is complete.
+6. Evaluate chemoselectivity sequence-wide to ensure early latent or unprotected functionality does not provoke competitive side reactions, catalyst deactivation, or unselective reagent consumption downstream.
+7. Establish stereocenters early using asymmetric catalysis or chiral-pool precursors, ensuring subsequent transformations preserve configurational stability and offer reliable diastereomeric or enantiomeric purge points.
+8. Integrate strategic contingencies into initial route design through interchangeable functional handles and alternative disconnections to circumvent recalcitrant or unscalable late-stage intermediates.
+9. Minimize protecting groups, deploying them only when conditions or latent handles cannot prevent incompatibilities; select mutually orthogonal groups cleavable under mild conditions that preserve existing structural motifs.
+10. Sequence cross-couplings on polyhalogenated heteroarenes by exploiting inherent electronic differentiation under mild conditions, applying catalyst-ligand control or altered halogen patterns when steric or electronic disparities are subtle.
+11. Generate hazardous, thermally labile, or explosive intermediates in situ and telescope them without isolation under controlled stoichiometry and temperature to prevent hazardous accumulation.
+12. Minimize redundant redox cycles by matching starting material oxidation states directly to the target core, avoiding wasteful reduction-oxidation loops unless mandated by functional group intolerance.
+13. Avoid low-selectivity mono-functionalizations on symmetric or near-symmetric polyfunctional intermediates; employ pre-differentiated synthons, orthogonal protection, or high-fidelity catalytic desymmetrization instead.
+14. Telescope compatible consecutive transformations without intermediate workups to boost volumetric efficiency, while strategically scheduling discrete isolations at crystalline or easily purifiable intermediates to purge impurities.
+15. Favor the direct functionalization, catalytic C–H activation, or cross-coupling of commercial heteroaromatic scaffolds over de novo ring syntheses, reserving de novo annulations for otherwise inaccessible heterocyclic architectures.
+16. Avoid carrying labile organometallic, organoboron, or organosilicon handles through aggressive oxidative, acidic, or basic conditions; install or generate them transiently directly prior to targeted bond constructions.
+17. Mask nitrogen functionality as non-nucleophilic, uncharged precursors (such as azides, amides, carbamates, or nitro groups) whenever Lewis-basic amines or acidic protons risk deactivating catalysts or promoting side reactions, unmasking late.

@@ -1,0 +1,70 @@
+{
+  "caveat": "Stages whose files_unrecoverable list is non-empty had already drifted before this freeze ran, because the source tree kept evolving after those stages executed. Their stored per-file hashes remain in results/manifests/, but their aggregate protocol hash is no longer re-derivable from any local copy.",
+  "path_dependence": "build_manifest hashes config.public_dict(), which contains the absolute repository root. Re-deriving an aggregate protocol hash therefore requires restoring these files into the SAME absolute path they were hashed from (verified: copying the snapshot to a different directory yields a different aggregate hash even with byte-identical files). Per-file sha256 verification is path-independent and is the check --mode verify performs.",
+  "purpose": "Byte-exact round-1 protocol inputs, frozen before v2 code changes.",
+  "stages": {
+    "final-b501f1272363f04bde2e4c9744dc500f70c46df2e73880508a6d1a3a03d5eba7": {
+      "files_recovered": 22,
+      "files_total": 22,
+      "files_unrecoverable": [],
+      "fully_recoverable": true,
+      "protocol_sha256": "b501f1272363f04bde2e4c9744dc500f70c46df2e73880508a6d1a3a03d5eba7"
+    },
+    "final-cb9d6faac3bbceca4a520d6f40f469f5579f48f9f6371e37f2129179cb06a1a7": {
+      "files_recovered": 22,
+      "files_total": 22,
+      "files_unrecoverable": [],
+      "fully_recoverable": true,
+      "protocol_sha256": "cb9d6faac3bbceca4a520d6f40f469f5579f48f9f6371e37f2129179cb06a1a7"
+    },
+    "h1_screen-6040c06bd57e28470b2d351786d089f4334a2de81953698a57bbac15c4fc2b62": {
+      "files_recovered": 14,
+      "files_total": 20,
+      "files_unrecoverable": [
+        "config/experiment.toml",
+        "src/retro_e/api.py",
+        "src/retro_e/generate.py",
+        "src/retro_e/judge.py",
+        "src/retro_e/optimize.py",
+        "src/retro_e/prompts.py"
+      ],
+      "fully_recoverable": false,
+      "protocol_sha256": "6040c06bd57e28470b2d351786d089f4334a2de81953698a57bbac15c4fc2b62"
+    },
+    "optimization-ec50b6273304e3e28f53051c0edead6b99128325d84356a9cabae162bafb6ac8": {
+      "files_recovered": 22,
+      "files_total": 23,
+      "files_unrecoverable": [
+        "src/retro_e/optimize.py"
+      ],
+      "fully_recoverable": false,
+      "protocol_sha256": "ec50b6273304e3e28f53051c0edead6b99128325d84356a9cabae162bafb6ac8"
+    },
+    "optimization-f8fb5559ccf10182b0669910f999df6d26bbd9ef525d3807e286563f56bb0282": {
+      "files_recovered": 20,
+      "files_total": 23,
+      "files_unrecoverable": [
+        "config/experiment.toml",
+        "src/retro_e/judge.py",
+        "src/retro_e/optimize.py"
+      ],
+      "fully_recoverable": false,
+      "protocol_sha256": "f8fb5559ccf10182b0669910f999df6d26bbd9ef525d3807e286563f56bb0282"
+    },
+    "pilot-29a029921b3afdc44e22ac320bca9d9c47e62b1d5c6d8ed63befdb0f7c046e84": {
+      "files_recovered": 13,
+      "files_total": 20,
+      "files_unrecoverable": [
+        "config/experiment.toml",
+        "src/retro_e/api.py",
+        "src/retro_e/cli.py",
+        "src/retro_e/generate.py",
+        "src/retro_e/judge.py",
+        "src/retro_e/optimize.py",
+        "src/retro_e/prompts.py"
+      ],
+      "fully_recoverable": false,
+      "protocol_sha256": "29a029921b3afdc44e22ac320bca9d9c47e62b1d5c6d8ed63befdb0f7c046e84"
+    }
+  }
+}

@@ -1,0 +1,2 @@
+{"target_id":"example-001","target_smiles":"CC(=O)OC1=CC=CC=C1C(=O)O","split":"test","source_type":"example_only","source_id":"example-001","source_url":null,"source_citation":null,"scaffold_smiles":null,"smiles_validated":false,"extraction_confidence":"low","needs_human_review":true,"quality_notes":["Placeholder only; do not include in an experiment."]}
+

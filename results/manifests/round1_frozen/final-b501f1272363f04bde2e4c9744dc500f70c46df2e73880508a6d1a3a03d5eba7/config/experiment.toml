@@ -1,0 +1,52 @@
+[api]
+base_url = "https://vps.lpzproxy.xyz"
+chat_completions_path = "/v1/chat/completions"
+models_path = "/v1/models"
+api_key_env = "RETRO_E_API_KEY"
+generator_model_env = "RETRO_E_GENERATOR_MODEL"
+judge_model_env = "RETRO_E_JUDGE_MODEL"
+timeout_seconds = 300.0
+max_retries = 4
+
+[generation]
+temperature = 0.3
+top_p = 1.0
+max_tokens = 16000
+n_routes = 1
+samples_per_target = 3
+seed = 20260902
+
+[judge]
+temperature = 0.0
+top_p = 1.0
+max_tokens = 150
+runs_per_pair = 3
+seed = 20260903
+
+[paths]
+system_prompt = "prompts/system_v1.txt"
+judge_prompt = "prompts/judge_v2.txt"
+experience_synthesis_prompt = "prompts/experience_synthesis_v1.txt"
+experience_e0 = "contexts/experience_E0.md"
+experience_e_star = "contexts/experience_E_star.md"
+experience_control = "contexts/experience_control.md"
+train_targets = "data/processed/train_targets.jsonl"
+test_targets = "data/processed/test_targets.jsonl"
+experience_source_routes = "data/processed/experience_source_routes.jsonl"
+optimizer_targets = "data/processed/optimizer_targets.jsonl"
+selection_targets = "data/processed/selection_targets.jsonl"
+pilot_targets = "data/processed/pilot_targets.jsonl"
+h1_screen_targets = "data/processed/h1_screen_targets.jsonl"
+results_dir = "results"
+
+[context]
+target_tokens = 1000
+max_e_star_ratio = 1.10
+tokenizer = "model_native_or_tiktoken_locked_before_training"
+
+[protocol]
+system_prompt_version = "system_v1"
+judge_prompt_version = "judge_v2"
+conditions = ["baseline", "E0", "E_star", "control"]
+primary_comparisons = ["E0_vs_baseline", "E_star_vs_E0", "E_star_vs_baseline"]
+control_comparison = "E_star_vs_control"

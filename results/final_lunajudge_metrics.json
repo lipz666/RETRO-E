@@ -1,0 +1,118 @@
+{
+  "comparisons": [
+    {
+      "comparison": "E0_vs_baseline_lunajudge",
+      "conditional_win_rate_95ci_wilson": [
+        0.4563632326480851,
+        0.5710489110285786
+      ],
+      "conditional_win_rate_excluding_ties": 0.5138888888888888,
+      "favored_source": "E0",
+      "generation_validity_by_source": {
+        "E0": {
+          "generations": 300,
+          "invalid": 14,
+          "invalid_rate": 0.04666666666666667,
+          "valid": 286
+        },
+        "baseline": {
+          "generations": 300,
+          "invalid": 15,
+          "invalid_rate": 0.05,
+          "valid": 285
+        }
+      },
+      "holm_adjusted_p": 0.6800614268589991,
+      "loss_rate": 0.4666666666666667,
+      "losses": 140,
+      "net_win_rate": 0.02666666666666667,
+      "pairs": 300,
+      "target_cluster_bootstrap_net_win_95ci": [
+        -0.08333333333333333,
+        0.13333333333333333
+      ],
+      "targets": 100,
+      "tie_rate": 0.04,
+      "ties": 12,
+      "two_sided_exact_sign_test_p": 0.6800614268589991,
+      "win_rate": 0.49333333333333335,
+      "wins": 148
+    },
+    {
+      "comparison": "E_star_vs_E0_lunajudge",
+      "conditional_win_rate_95ci_wilson": [
+        0.5112373050986823,
+        0.626649128391692
+      ],
+      "conditional_win_rate_excluding_ties": 0.5698924731182796,
+      "favored_source": "E_star",
+      "generation_validity_by_source": {
+        "E0": {
+          "generations": 300,
+          "invalid": 14,
+          "invalid_rate": 0.04666666666666667,
+          "valid": 286
+        },
+        "E_star": {
+          "generations": 300,
+          "invalid": 14,
+          "invalid_rate": 0.04666666666666667,
+          "valid": 286
+        }
+      },
+      "holm_adjusted_p": 0.04547043960944892,
+      "loss_rate": 0.4,
+      "losses": 120,
+      "net_win_rate": 0.13,
+      "pairs": 300,
+      "target_cluster_bootstrap_net_win_95ci": [
+        0.03,
+        0.22666666666666663
+      ],
+      "targets": 100,
+      "tie_rate": 0.07,
+      "ties": 21,
+      "two_sided_exact_sign_test_p": 0.02273521980472446,
+      "win_rate": 0.53,
+      "wins": 159
+    },
+    {
+      "comparison": "E_star_vs_baseline_lunajudge",
+      "conditional_win_rate_95ci_wilson": [
+        0.5264371529311689,
+        0.6403213126375482
+      ],
+      "conditional_win_rate_excluding_ties": 0.5845070422535211,
+      "favored_source": "E_star",
+      "generation_validity_by_source": {
+        "E_star": {
+          "generations": 300,
+          "invalid": 14,
+          "invalid_rate": 0.04666666666666667,
+          "valid": 286
+        },
+        "baseline": {
+          "generations": 300,
+          "invalid": 15,
+          "invalid_rate": 0.05,
+          "valid": 285
+        }
+      },
+      "holm_adjusted_p": 0.015592196562571763,
+      "loss_rate": 0.3933333333333333,
+      "losses": 118,
+      "net_win_rate": 0.16,
+      "pairs": 300,
+      "target_cluster_bootstrap_net_win_95ci": [
+        0.05333333333333334,
+        0.26666666666666666
+      ],
+      "targets": 100,
+      "tie_rate": 0.05333333333333334,
+      "ties": 16,
+      "two_sided_exact_sign_test_p": 0.005197398854190588,
+      "win_rate": 0.5533333333333333,
+      "wins": 166
+    }
+  ]
+}

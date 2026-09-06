@@ -1,0 +1,287 @@
+{
+  "bootstrap_draws": 10000,
+  "check_1_recount": {
+    "gemini:E0_vs_baseline": {
+      "losses": 124,
+      "pairs": 300,
+      "recomputed_net_win_rate": 0.11666666666666667,
+      "reconciliation": {
+        "agrees": true,
+        "recorded_losses": 124,
+        "recorded_net_win_rate": 0.11666666666666667,
+        "recorded_ties": 17,
+        "recorded_wins": 159
+      },
+      "targets": 100,
+      "ties": 17,
+      "wins": 159
+    },
+    "gemini:E_star_vs_E0": {
+      "losses": 112,
+      "pairs": 300,
+      "recomputed_net_win_rate": 0.14,
+      "reconciliation": {
+        "agrees": true,
+        "recorded_losses": 112,
+        "recorded_net_win_rate": 0.14,
+        "recorded_ties": 34,
+        "recorded_wins": 154
+      },
+      "targets": 100,
+      "ties": 34,
+      "wins": 154
+    },
+    "gemini:E_star_vs_baseline": {
+      "losses": 102,
+      "pairs": 300,
+      "recomputed_net_win_rate": 0.23333333333333334,
+      "reconciliation": {
+        "agrees": true,
+        "recorded_losses": 102,
+        "recorded_net_win_rate": 0.23333333333333334,
+        "recorded_ties": 26,
+        "recorded_wins": 172
+      },
+      "targets": 100,
+      "ties": 26,
+      "wins": 172
+    },
+    "gemini:E_star_vs_control": {
+      "losses": 115,
+      "pairs": 300,
+      "recomputed_net_win_rate": 0.14333333333333334,
+      "reconciliation": {
+        "agrees": true,
+        "recorded_losses": 115,
+        "recorded_net_win_rate": 0.14333333333333334,
+        "recorded_ties": 27,
+        "recorded_wins": 158
+      },
+      "targets": 100,
+      "ties": 27,
+      "wins": 158
+    },
+    "gpt-5.6-luna:E0_vs_baseline": {
+      "losses": 140,
+      "pairs": 300,
+      "recomputed_net_win_rate": 0.02666666666666667,
+      "reconciliation": {
+        "agrees": true,
+        "recorded_losses": 140,
+        "recorded_net_win_rate": 0.02666666666666667,
+        "recorded_ties": 12,
+        "recorded_wins": 148
+      },
+      "targets": 100,
+      "ties": 12,
+      "wins": 148
+    },
+    "gpt-5.6-luna:E_star_vs_E0": {
+      "losses": 120,
+      "pairs": 300,
+      "recomputed_net_win_rate": 0.13,
+      "reconciliation": {
+        "agrees": true,
+        "recorded_losses": 120,
+        "recorded_net_win_rate": 0.13,
+        "recorded_ties": 21,
+        "recorded_wins": 159
+      },
+      "targets": 100,
+      "ties": 21,
+      "wins": 159
+    },
+    "gpt-5.6-luna:E_star_vs_baseline": {
+      "losses": 118,
+      "pairs": 300,
+      "recomputed_net_win_rate": 0.16,
+      "reconciliation": {
+        "agrees": true,
+        "recorded_losses": 118,
+        "recorded_net_win_rate": 0.16,
+        "recorded_ties": 16,
+        "recorded_wins": 166
+      },
+      "targets": 100,
+      "ties": 16,
+      "wins": 166
+    }
+  },
+  "check_2_target_unit": {
+    "gemini": {
+      "E0_vs_baseline": {
+        "losses": 124,
+        "pairs": 300,
+        "route_pair_sign_test_p_treats_300_pairs_as_independent": 0.04307998253769839,
+        "target_cluster_bootstrap_95ci": [
+          0.013333333333333332,
+          0.22
+        ],
+        "target_mean_net": 0.11666666666666667,
+        "target_sign_flip_holm_p": 0.03519648035196481,
+        "target_sign_flip_p": 0.03519648035196481,
+        "targets": 100,
+        "targets_negative": 36,
+        "targets_positive": 53,
+        "targets_zero": 11,
+        "ties": 17,
+        "wins": 159
+      },
+      "E_star_vs_E0": {
+        "losses": 112,
+        "pairs": 300,
+        "route_pair_sign_test_p_treats_300_pairs_as_independent": 0.011799153332689959,
+        "target_cluster_bootstrap_95ci": [
+          0.03333333333333333,
+          0.24666666666666667
+        ],
+        "target_mean_net": 0.13999999999999999,
+        "target_sign_flip_holm_p": 0.025397460253974602,
+        "target_sign_flip_p": 0.012698730126987301,
+        "targets": 100,
+        "targets_negative": 34,
+        "targets_positive": 56,
+        "targets_zero": 10,
+        "ties": 34,
+        "wins": 154
+      },
+      "E_star_vs_baseline": {
+        "losses": 102,
+        "pairs": 300,
+        "route_pair_sign_test_p_treats_300_pairs_as_independent": 2.7933018059567346e-05,
+        "target_cluster_bootstrap_95ci": [
+          0.12666666666666668,
+          0.33999999999999997
+        ],
+        "target_mean_net": 0.23333333333333334,
+        "target_sign_flip_holm_p": 0.00029997000299970003,
+        "target_sign_flip_p": 9.999000099990002e-05,
+        "targets": 100,
+        "targets_negative": 29,
+        "targets_positive": 62,
+        "targets_zero": 9,
+        "ties": 26,
+        "wins": 172
+      },
+      "E_star_vs_control": {
+        "holm_note": "Auxiliary comparison, its own family of one (round-1 convention retained).",
+        "losses": 115,
+        "pairs": 300,
+        "route_pair_sign_test_p_treats_300_pairs_as_independent": 0.010889404296732156,
+        "target_cluster_bootstrap_95ci": [
+          0.029999999999999995,
+          0.25666666666666665
+        ],
+        "target_mean_net": 0.14333333333333334,
+        "target_sign_flip_p": 0.017698230176982303,
+        "targets": 100,
+        "targets_negative": 36,
+        "targets_positive": 55,
+        "targets_zero": 9,
+        "ties": 27,
+        "wins": 158
+      }
+    },
+    "gpt-5.6-luna": {
+      "E0_vs_baseline": {
+        "losses": 140,
+        "pairs": 300,
+        "route_pair_sign_test_p_treats_300_pairs_as_independent": 0.6800614268589991,
+        "target_cluster_bootstrap_95ci": [
+          -0.08,
+          0.13333333333333333
+        ],
+        "target_mean_net": 0.02666666666666667,
+        "target_sign_flip_holm_p": 0.6667333266673333,
+        "target_sign_flip_p": 0.6667333266673333,
+        "targets": 100,
+        "targets_negative": 46,
+        "targets_positive": 49,
+        "targets_zero": 5,
+        "ties": 12,
+        "wins": 148
+      },
+      "E_star_vs_E0": {
+        "losses": 120,
+        "pairs": 300,
+        "route_pair_sign_test_p_treats_300_pairs_as_independent": 0.02273521980472446,
+        "target_cluster_bootstrap_95ci": [
+          0.03,
+          0.22999999999999998
+        ],
+        "target_mean_net": 0.13,
+        "target_sign_flip_holm_p": 0.0287971202879712,
+        "target_sign_flip_p": 0.0143985601439856,
+        "targets": 100,
+        "targets_negative": 36,
+        "targets_positive": 56,
+        "targets_zero": 8,
+        "ties": 21,
+        "wins": 159
+      },
+      "E_star_vs_baseline": {
+        "losses": 118,
+        "pairs": 300,
+        "route_pair_sign_test_p_treats_300_pairs_as_independent": 0.005197398854190588,
+        "target_cluster_bootstrap_95ci": [
+          0.05,
+          0.27
+        ],
+        "target_mean_net": 0.16,
+        "target_sign_flip_holm_p": 0.0137986201379862,
+        "target_sign_flip_p": 0.0045995400459954,
+        "targets": 100,
+        "targets_negative": 41,
+        "targets_positive": 57,
+        "targets_zero": 2,
+        "ties": 16,
+        "wins": 166
+      }
+    }
+  },
+  "check_3_paired_judge_difference": {
+    "E0_vs_baseline": {
+      "difference_cluster_bootstrap_95ci": [
+        -0.016666666666666673,
+        0.20333333333333334
+      ],
+      "difference_sign_flip_p": 0.12708729127087293,
+      "gemini_target_mean_net": 0.11666666666666667,
+      "interpretation_rule": "A judge difference is established only if this interval excludes 0. Comparing each judge's own significance separately does not test this.",
+      "luna_target_mean_net": 0.02666666666666667,
+      "mean_difference_gemini_minus_luna": 0.09,
+      "pairwise_verdict_agreement_rate": 0.6966666666666667,
+      "targets_compared": 100
+    },
+    "E_star_vs_E0": {
+      "difference_cluster_bootstrap_95ci": [
+        -0.09666666666666668,
+        0.12
+      ],
+      "difference_sign_flip_p": 0.8997100289971003,
+      "gemini_target_mean_net": 0.13999999999999999,
+      "interpretation_rule": "A judge difference is established only if this interval excludes 0. Comparing each judge's own significance separately does not test this.",
+      "luna_target_mean_net": 0.13,
+      "mean_difference_gemini_minus_luna": 0.009999999999999997,
+      "pairwise_verdict_agreement_rate": 0.7066666666666667,
+      "targets_compared": 100
+    },
+    "E_star_vs_baseline": {
+      "difference_cluster_bootstrap_95ci": [
+        -0.026666666666666672,
+        0.17666666666666667
+      ],
+      "difference_sign_flip_p": 0.1802819718028197,
+      "gemini_target_mean_net": 0.23333333333333334,
+      "interpretation_rule": "A judge difference is established only if this interval excludes 0. Comparing each judge's own significance separately does not test this.",
+      "luna_target_mean_net": 0.16,
+      "mean_difference_gemini_minus_luna": 0.07333333333333333,
+      "pairwise_verdict_agreement_rate": 0.7366666666666667,
+      "targets_compared": 100
+    }
+  },
+  "inputs_read_only": true,
+  "permutations": 10000,
+  "purpose": "Plan v2 section 2.1 P0 re-analysis of round-1 confirmatory results.",
+  "seed": 20260906
+}

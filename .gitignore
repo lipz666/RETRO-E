@@ -1,0 +1,41 @@
+.DS_Store
+.env
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# Raw model outputs can be large and may contain sensitive content.
+results/generations/*.jsonl
+results/judgments/*.jsonl
+results/manifests/*.json
+results/metrics.json
+results/results.csv
+reports/final_report.md
+
+# Source datasets are local by default; retain only their documentation.
+data/raw/*
+!data/raw/.gitkeep
+data/interim/*
+!data/interim/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+
+# --- v2_pilot, mirroring the round-1 rules above ---
+# Raw generations and judgments are large and hold verbatim model output; the ledgers,
+# metrics, manifests and calibration records that constitute the scientific record stay.
+results/v2/generations/*.jsonl
+results/v2/optimization/**/*_generations.jsonl
+results/v2/optimization/**/*_judgments.jsonl
+results/v2/optimization/_logs/
+results/v2/dev_eval/generations/
+results/v2/dev_eval/judgments/
+results/optimization/tier*/
+data/v2/*.jsonl
+!data/v2/splits.json
+
+# Round-1 aggregate results kept out for the same reason as results/generations.
+results/*.csv
+results/PAUSED_STATE.json

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RETRO-E target",
+  "type": "object",
+  "required": ["target_id", "target_smiles", "split", "source_type", "source_id"],
+  "properties": {
+    "target_id": {"type": "string", "minLength": 1},
+    "target_smiles": {"type": "string", "minLength": 1},
+    "split": {"enum": ["experience_source", "train", "test"]},
+    "source_type": {"type": "string", "minLength": 1},
+    "source_id": {"type": "string", "minLength": 1},
+    "source_url": {"type": ["string", "null"]},
+    "source_citation": {"type": ["string", "null"]},
+    "scaffold_smiles": {"type": ["string", "null"]},
+    "smiles_validated": {"type": "boolean"},
+    "extraction_confidence": {"enum": ["high", "medium", "low"]},
+    "needs_human_review": {"type": "boolean"},
+    "quality_notes": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": true
+}
+

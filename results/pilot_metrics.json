@@ -1,0 +1,42 @@
+{
+  "comparisons": [
+    {
+      "comparison": "pilot_E0_vs_baseline",
+      "conditional_win_rate_95ci_wilson": [
+        0.41713547738519774,
+        0.8482367556028526
+      ],
+      "conditional_win_rate_excluding_ties": 0.6666666666666666,
+      "favored_source": "E0",
+      "generation_validity_by_source": {
+        "E0": {
+          "generations": 15,
+          "invalid": 0,
+          "invalid_rate": 0.0,
+          "valid": 15
+        },
+        "baseline": {
+          "generations": 15,
+          "invalid": 0,
+          "invalid_rate": 0.0,
+          "valid": 15
+        }
+      },
+      "holm_adjusted_p": 0.3017578125,
+      "loss_rate": 0.3333333333333333,
+      "losses": 5,
+      "net_win_rate": 0.3333333333333333,
+      "pairs": 15,
+      "target_cluster_bootstrap_net_win_95ci": [
+        -0.4666666666666667,
+        1.0
+      ],
+      "targets": 5,
+      "tie_rate": 0.0,
+      "ties": 0,
+      "two_sided_exact_sign_test_p": 0.3017578125,
+      "win_rate": 0.6666666666666666,
+      "wins": 10
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "e0_locked_tokens": 736,
+  "locked_tokens": 755,
+  "output_path": "/Users/lpz/Desktop/AtomFlow/RETRO-E/contexts/experience_E_star.md",
+  "promoted_at": "2026-09-03T10:15:16.528370+00:00",
+  "promoted_candidate_id": "5fd7566a40e30762",
+  "promoted_from_tier": "tier3",
+  "reward": 0.6208333333333333,
+  "sha256": "5fd7566a40e3076275e8845c2b65e92914f72562a5c37bf4b4fbad4a1bbaf79a",
+  "tier3_candidates": [
+    {
+      "candidate_id": "5fd7566a40e30762",
+      "reward": 0.6208333333333333
+    },
+    {
+      "candidate_id": "fa24bdf5c27b4193",
+      "reward": 0.6083333333333333
+    }
+  ]
+}
