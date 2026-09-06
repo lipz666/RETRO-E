@@ -8,6 +8,7 @@
 | 你想知道 | 看这里 |
 |---|---|
 | 现在是什么状态、下一步做什么 | [STATUS.md](STATUS.md) |
+| 相对实验计划完成了多少、哪些问题还答不了 | [PROGRESS.md](PROGRESS.md) |
 | 实时数字（运行进度、哈希、划分、校验） | `uv run python scripts/status.py` |
 | 怎么跑 / 怎么续跑 / 怎么校验 | [RUNBOOK.md](RUNBOOK.md) |
 | 某个文件是什么、哪个哈希对应什么 | [ARTIFACTS.md](ARTIFACTS.md) |
