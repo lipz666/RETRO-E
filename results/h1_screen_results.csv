@@ -1,0 +1,2 @@
+comparison,favored_source,pairs,targets,wins,losses,ties,win_rate,loss_rate,tie_rate,net_win_rate,two_sided_exact_sign_test_p,holm_adjusted_p
+h1_screen_E0_vs_baseline,E0,90,30,51,35,4,0.5666666666666667,0.3888888888888889,0.044444444444444446,0.17777777777777778,0.10522535125694397,0.10522535125694397

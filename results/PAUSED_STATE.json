@@ -1,0 +1,41 @@
+{
+  "paused_at_local_date": "2026-09-03",
+  "status": "paused_by_user",
+  "active_experiment_processes": 0,
+  "generator_model_requested": "gemini-3.7-flash-high",
+  "generator_model_reported": "gemini-3.7-flash",
+  "judge_model": "gpt-5.6-sol",
+  "experience_e0_sha256": "183f9018fdae2555720e49d1f65842519e033a089dfb6eab03428396d8ba88e4",
+  "pilot": {
+    "protocol_sha256": "29a029921b3afdc44e22ac320bca9d9c47e62b1d5c6d8ed63befdb0f7c046e84",
+    "baseline_generations": 15,
+    "e0_generations": 15,
+    "judge_votes": 45,
+    "complete_pairs": 15
+  },
+  "h1_screen": {
+    "protocol_sha256": "6040c06bd57e28470b2d351786d089f4334a2de81953698a57bbac15c4fc2b62",
+    "baseline_generations": 90,
+    "baseline_valid": 83,
+    "e0_generations": 90,
+    "e0_valid": 84,
+    "judge_votes_present": 270,
+    "judge_votes_expected": 270,
+    "complete_pairs": 90,
+    "incomplete_pair_id": null,
+    "missing_judge_run": null,
+    "final_screen_counts": {
+      "e0_wins": 51,
+      "baseline_wins": 35,
+      "ties": 4
+    },
+    "net_win_rate": 0.17777777777777778,
+    "exact_sign_test_p": 0.10522535125694397,
+    "target_cluster_bootstrap_net_win_95ci": [
+      -0.011111111111111112,
+      0.36666666666666664
+    ]
+  },
+  "next_stage": "optimize_E_star",
+  "test_set_touched": false
+}

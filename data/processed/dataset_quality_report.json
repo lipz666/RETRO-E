@@ -1,0 +1,41 @@
+{
+  "eligible_candidates": 967,
+  "limitations": [
+    "PaRoutes contains patent-derived benchmark routes, not independently validated procedures.",
+    "Reaction names, yields, and full conditions are absent in the route artifact.",
+    "All selected records require human review before chemical execution."
+  ],
+  "output_counts": {
+    "experience_source_routes": 200,
+    "h1_screen_targets": 30,
+    "optimizer_targets": 160,
+    "pilot_targets": 5,
+    "selection_targets": 40,
+    "test_targets": 100,
+    "train_targets": 200
+  },
+  "raw_routes": 10000,
+  "rejected": {
+    "invalid_or_acyclic_target": 161,
+    "route_below_complexity_threshold": 7265,
+    "target_size_outside_18_65": 1607
+  },
+  "seed": 20260902,
+  "selected_unique_scaffolds": 500,
+  "selection": {
+    "minimum_leaves": 2,
+    "minimum_steps": 5,
+    "scaffold_disjoint_across_source_train_test": true,
+    "target_heavy_atoms": [
+      18,
+      65
+    ]
+  },
+  "source": {
+    "doi": "10.5281/zenodo.7341155",
+    "raw_file": "data/raw/paroutes_v2/ref_routes_n1.json",
+    "raw_sha256": "b818f2115ce10da51f84bf13f19dc2206863b1b074ef348017de258e9e1bff02",
+    "title": "PaRoutes 2.0 n1 reference routes",
+    "url": "https://zenodo.org/records/7341155"
+  }
+}

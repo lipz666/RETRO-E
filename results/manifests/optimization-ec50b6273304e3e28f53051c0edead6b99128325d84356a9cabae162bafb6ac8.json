@@ -1,0 +1,104 @@
+{
+  "config": {
+    "api": {
+      "api_key_env": "RETRO_E_API_KEY",
+      "base_url": "https://vps.lpzproxy.xyz",
+      "chat_completions_path": "/v1/chat/completions",
+      "generator_model_env": "RETRO_E_GENERATOR_MODEL",
+      "judge_model_env": "RETRO_E_JUDGE_MODEL",
+      "max_retries": 4,
+      "models_path": "/v1/models",
+      "timeout_seconds": 300.0
+    },
+    "context": {
+      "max_e_star_ratio": 1.1,
+      "target_tokens": 1000,
+      "tokenizer": "model_native_or_tiktoken_locked_before_training"
+    },
+    "generation": {
+      "max_tokens": 16000,
+      "n_routes": 1,
+      "runs_per_pair": 3,
+      "samples_per_target": 3,
+      "seed": 20260902,
+      "temperature": 0.3,
+      "top_p": 1.0
+    },
+    "judge": {
+      "max_tokens": 150,
+      "n_routes": 1,
+      "runs_per_pair": 3,
+      "samples_per_target": 1,
+      "seed": 20260903,
+      "temperature": 0.0,
+      "top_p": 1.0
+    },
+    "paths": {
+      "experience_control": "/Users/lpz/Desktop/AtomFlow/RETRO-E/contexts/experience_control.md",
+      "experience_e0": "/Users/lpz/Desktop/AtomFlow/RETRO-E/contexts/experience_E0.md",
+      "experience_e_star": "/Users/lpz/Desktop/AtomFlow/RETRO-E/contexts/experience_E_star.md",
+      "experience_source_routes": "/Users/lpz/Desktop/AtomFlow/RETRO-E/data/processed/experience_source_routes.jsonl",
+      "experience_synthesis_prompt": "/Users/lpz/Desktop/AtomFlow/RETRO-E/prompts/experience_synthesis_v1.txt",
+      "h1_screen_targets": "/Users/lpz/Desktop/AtomFlow/RETRO-E/data/processed/h1_screen_targets.jsonl",
+      "judge_prompt": "/Users/lpz/Desktop/AtomFlow/RETRO-E/prompts/judge_v2.txt",
+      "optimizer_targets": "/Users/lpz/Desktop/AtomFlow/RETRO-E/data/processed/optimizer_targets.jsonl",
+      "pilot_targets": "/Users/lpz/Desktop/AtomFlow/RETRO-E/data/processed/pilot_targets.jsonl",
+      "results_dir": "/Users/lpz/Desktop/AtomFlow/RETRO-E/results",
+      "selection_targets": "/Users/lpz/Desktop/AtomFlow/RETRO-E/data/processed/selection_targets.jsonl",
+      "system_prompt": "/Users/lpz/Desktop/AtomFlow/RETRO-E/prompts/system_v1.txt",
+      "test_targets": "/Users/lpz/Desktop/AtomFlow/RETRO-E/data/processed/test_targets.jsonl",
+      "train_targets": "/Users/lpz/Desktop/AtomFlow/RETRO-E/data/processed/train_targets.jsonl"
+    },
+    "protocol": {
+      "conditions": [
+        "baseline",
+        "E0",
+        "E_star",
+        "control"
+      ],
+      "control_comparison": "E_star_vs_control",
+      "judge_prompt_version": "judge_v2",
+      "primary_comparisons": [
+        "E0_vs_baseline",
+        "E_star_vs_E0",
+        "E_star_vs_baseline"
+      ],
+      "system_prompt_version": "system_v1"
+    },
+    "root": "/Users/lpz/Desktop/AtomFlow/RETRO-E"
+  },
+  "created_at": "2026-09-02T16:48:56.686483+00:00",
+  "file_sha256": {
+    "config/experiment.toml": "288d3904b3e860e04339e236761f7734c61bbfe0a504e6f72b6492f9ef63c3bd",
+    "contexts/experience_E0.md": "1c7d1a80b1ce33be992ca126ebf36103050962166f747bb32572634d7c8486f7",
+    "data/processed/experience_source_routes.jsonl": "4d7a4db51c11c1a6c900ec92e67a50c816d9e7d3f9ac6a73bb981b127bf8ac2c",
+    "data/processed/optimizer_targets.jsonl": "f38cc651749f6c33b94cedab700b406856b9aa66eb86834afd36813643183ddc",
+    "data/processed/selection_targets.jsonl": "447c45aebd76f938ece71654fd0d0f4b27c54b6189812a02b39e5e2ffaf53547",
+    "prompts/experience_synthesis_v1.txt": "c1720f3295545dcb5b1686d45e13bc00ff8c7b1c4e248f022969ab3c630c9e6f",
+    "prompts/judge_v2.txt": "fc3ccb047069f7a9164e71a1be872935f0d4797c7d822d3fd469b94af9fe7676",
+    "prompts/system_v1.txt": "3caefc8eebeaf59ae59c3d5af6c5361bb5d1f65827f5a777d6014b3c0ef7b3bd",
+    "schemas/experience_route.schema.json": "63db28d23cd24be2632766bc2a841360132ab2d012bf4685c35b7ce88eae7710",
+    "schemas/target.schema.json": "8dd3044e1131c3ebfae5eb9c92ecfb1f7bda8df8ec0f7ad08fce17a8798e5178",
+    "src/retro_e/__init__.py": "506e306a42f2b6a253d14ec672ff775334ef40115dd4c29982031fd2adf51857",
+    "src/retro_e/api.py": "610b20f7c839dc014a9cb51a055579519e327c79f544baf433499d02afbff715",
+    "src/retro_e/chemistry.py": "6dd5b861f216942e63a01e2dcb4b16cc2a866fed04f9f7a69181c60130c7d1eb",
+    "src/retro_e/cli.py": "36501fb742fbead39f0c5ce37d448b898f2c1362e0c73e75b8c59bd63ca85c1b",
+    "src/retro_e/config.py": "1f4b96298345c85a91f045ddc7d4908892076d2cb6f7e9463cf49b85710c32a7",
+    "src/retro_e/dataset.py": "eb9864f47eddafcdbdf59f2dcd8ce2d3fe750fb71a251794923fd01836a6d7b6",
+    "src/retro_e/generate.py": "189185fe069ffbb08a5b9d16af41d936d3c26dd7489e59362b562e734d5b1a9b",
+    "src/retro_e/io.py": "56ec9f9d2b942a590d6da6ad89d1094902e118686ee66fd65ca6280dd7c1cd52",
+    "src/retro_e/judge.py": "22c5e58bb75d38deccc6e00f133a1dda1488e4eeaa7f7a1b02cdc578604d6d36",
+    "src/retro_e/metrics.py": "dbf5d0ce046ba5946bb6966f14dd365be9aa98495c2606a98797eb5089106b54",
+    "src/retro_e/optimize.py": "43faee38c6a9dffb350014334176ae6c330e41bb500eec0df7a14db042e2e0db",
+    "src/retro_e/prompts.py": "baa3cbc17ebfbfbc8416538f6496015b670ef9f04f28b524c05d66a987582904",
+    "src/retro_e/validation.py": "f50cf1e7ddb7583207a25747eb0f6a153c11200c63ec470757f118034468003a"
+  },
+  "metadata": {
+    "stage": "optimization"
+  },
+  "protocol_sha256": "ec50b6273304e3e28f53051c0edead6b99128325d84356a9cabae162bafb6ac8",
+  "resolved_models": {
+    "generator": "gemini-3.7-flash-high",
+    "judge": "gemini-3.7-flash-high"
+  }
+}

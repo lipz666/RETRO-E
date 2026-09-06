@@ -1,0 +1,2 @@
+comparison,favored_source,pairs,targets,wins,losses,ties,win_rate,loss_rate,tie_rate,net_win_rate,two_sided_exact_sign_test_p,holm_adjusted_p
+E_star_vs_control,E_star,300,100,158,115,27,0.5266666666666666,0.38333333333333336,0.09,0.14333333333333334,0.010889404296732156,0.010889404296732156

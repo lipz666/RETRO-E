@@ -1,0 +1,2 @@
+comparison,favored_source,pairs,targets,wins,losses,ties,win_rate,loss_rate,tie_rate,net_win_rate,two_sided_exact_sign_test_p,holm_adjusted_p
+pilot_E0_vs_baseline,E0,15,5,10,5,0,0.6666666666666666,0.3333333333333333,0.0,0.3333333333333333,0.3017578125,0.3017578125
