@@ -536,7 +536,18 @@ def propose_mutation(
     examples: list[dict[str, Any]],
     target_tokens: int,
 ) -> tuple[str, str, dict[str, Any]]:
-    """Returns (new_candidate_text, critique_text, api_usage)."""
+    """Returns (new_candidate_text, critique_text, api_usage).
+
+    The length instruction is anchored on the parent and licenses deletion. Aiming at the cap
+    deadlocks once a parent approaches it: the prompt used to say "keep everything that
+    already works" while targeting the ceiling itself, so every child of a near-saturated
+    parent was born over budget and compression could not claw it back. Observed twice -- the
+    1600-token capacity arm (parent at 1585, five rejections at 1776-1950) and the R-empty arm
+    (parent at 739 of 800, seven rejections at 816-1022). The headroom factor had been applied
+    to the search_only and instruction_opt operators but never to this one.
+    """
+    parent_tokens = locked_token_count(parent_text)
+    ceiling = min(parent_tokens, int(target_tokens * REFLECTIVE_TOKEN_HEADROOM))
     examples_text = json.dumps(examples, ensure_ascii=False, indent=2)
     critique_prompt = f"""You are auditing a synthetic-experience context used to help an LLM plan \
 retrosynthetic routes. Below is the current context, followed by up to {len(examples)} training-set \
@@ -562,14 +573,19 @@ LOSING/TYING CASES
             model=config.judge_model,
         )
         revision_prompt = f"""Revise the synthetic-experience context below using the audit. Keep \
-everything that already works; change only what the audit supports. Preserve the numbered-entry \
-format and the title line SYNTHETIC EXPERIENCE. Target approximately {target_tokens} tokens.
+what the audit does not question, and revise what it does. Preserve the numbered-entry \
+format and the title line SYNTHETIC EXPERIENCE.
+
+Length. The current context is {parent_tokens} tokens; the hard ceiling is {target_tokens}. \
+Your revision must come in at or below {ceiling} tokens. If the audit calls for new material, \
+make room by condensing or deleting the weakest existing entries rather than by adding length.
 
 Hard constraints:
 - general, transferable strategic retrosynthetic experience only;
 - no SMILES, no target molecule, no source route or patent identifier, no claim of experimental \
 validation, no mention of this optimization process or of "training", "reward", or "judge";
-- do not shrink to fewer than 10 entries or grow past 20 entries.
+- keep between 10 and 20 entries, and prefer dropping a weak entry over exceeding the \
+length ceiling; removing an entry the audit criticised is a legitimate revision.
 
 CURRENT CONTEXT
 {parent_text}
@@ -736,6 +752,14 @@ LOSING/TYING CASES
 # prompts state both a target near the parent's length and a hard ceiling. The runner still
 # enforces the cap independently.
 PROMPT_TOKEN_HEADROOM = 0.92
+
+# The reflective operator needs a larger margin than the other two. It rewrites a parent
+# rather than restructuring it, so its output tracks the parent's length and overshoots any
+# stated ceiling by roughly 10%. Measured from a parent at 739 of 800 tokens: a stated
+# ceiling of 736 produced 820/803/824/808, all over cap, while ceilings of 644 and 598
+# produced 654/708 and 795/757, all admissible with no compression at all. The blind and
+# instruction operators restructure more freely, clear 0.92 reliably, and are left alone.
+REFLECTIVE_TOKEN_HEADROOM = 0.80
 
 
 def propose_search_only(

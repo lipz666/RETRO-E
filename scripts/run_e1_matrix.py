@@ -286,19 +286,31 @@ def run(args: argparse.Namespace) -> None:
                 # 824-1032 locked tokens against an 800 cap even after a single compression
                 # aimed at 736. search_only and instruction_opt clear the cap in one pass.
                 # Compress with a progressively harder target instead, and record the passes.
+                # compress_candidate is not monotone: it returns longer text often enough
+                # that keeping the last pass loses better intermediates. Observed 803 -> 846
+                # -> 815 -> 835 and 808 -> 865 -> 850 -> 903. Keep the shortest text any pass
+                # produced, and never accept a pass that made things worse.
                 usage: dict[str, Any] = {}
+                best_text, best_tokens = trial.text, proposed_tokens
                 for ratio in (PROMPT_TOKEN_HEADROOM, 0.80, 0.70):
                     compressed_count += 1
                     text, pass_usage = compress_candidate(
-                        config, trial.text, int(cap_tokens * ratio)
+                        config, best_text, int(cap_tokens * ratio)
                     )
                     usage = {**usage, **pass_usage}
-                    trial = dataclasses.replace(
-                        trial, text=text, usage={**trial.usage, **usage},
-                        audit={**trial.audit, "compressed_from_tokens": proposed_tokens},
-                    )
-                    if locked_token_count(trial.text) <= cap_tokens:
+                    tokens = locked_token_count(text)
+                    if tokens < best_tokens:
+                        best_text, best_tokens = text, tokens
+                    if best_tokens <= cap_tokens:
                         break
+                trial = dataclasses.replace(
+                    trial, text=best_text, usage={**trial.usage, **usage},
+                    audit={
+                        **trial.audit,
+                        "compressed_from_tokens": proposed_tokens,
+                        "compressed_to_tokens": best_tokens,
+                    },
+                )
             candidate_id = inspect_candidate_text(trial.text, parent_id).candidate_id
             leaks = leak_scan(trial.text, forbidden_smiles, forbidden_ids)
             over = locked_token_count(trial.text) > cap_tokens
