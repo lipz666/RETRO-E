@@ -1,0 +1,23 @@
+{
+  "drawn_from": "PaRoutes n1 scaffolds unused by round 1, dev_new and holdout_new",
+  "expA_seed": 20260914,
+  "isolation_audit": {
+    "canonical_smiles_leaks": [],
+    "internal_scaffold_overlap": 0,
+    "murcko_scaffold_leaks": [],
+    "passed": true
+  },
+  "limitation": "Scaffold disjointness does not bound analog similarity, and public patent routes may sit in the frozen model's pretraining data; structural isolation from earlier splits establishes neither.",
+  "n": 200,
+  "nearest_neighbour_audit": {
+    "count_above_0.7": 2,
+    "max": 0.8909,
+    "median": 0.2765,
+    "metric": "Morgan r=2, 2048 bits, max Tanimoto against every earlier split",
+    "p90": 0.4103
+  },
+  "purpose": "Experiment A evaluation set: R-empty vs E0 vs E*, 200 x 2 x 1.",
+  "reserve_before_draw": 265,
+  "reserve_left": 65,
+  "source_raw_sha256": "b818f2115ce10da51f84bf13f19dc2206863b1b074ef348017de258e9e1bff02"
+}
