@@ -118,11 +118,13 @@ reward = 候选相对缓存 baseline 的 mean(赢 1 / 平 0.5 / 输 0)。**0.5 =
 
 这与 round 1 的现象一致（tier1 第一名掉到中游），successive-halving 的设计正在发挥作用。
 
-**(b) 长度膨胀是 `reflective` 特有的。** 压缩兜底触发次数 **31 / 16 / 7**
-（reflective / search_only / instruction_opt）。reflective 的修订 prompt 要求「保留所有已有
-内容，只改审计支持的部分」，天然倾向累积。
+**(b) ~~长度膨胀是 `reflective` 特有的~~ —— 此条已撤回。** 压缩兜底触发次数
+**31 / 16 / 7** 的真实原因是：`propose_mutation` 是三个算子里唯一仍瞄准裸 token 上限的一个，
+headroom 因子当初只加到了 `search_only` 与 `instruction_opt`。同一个 bug 还导致容量臂停在
+4/16、R-empty 停在 2/16。这是我的 prompt bug，不是方法性质。根因与修复见
+[experiment_registry.md](../reports/v2/experiment_registry.md) 的 2026-09-14（续 2）。
 
-> **已知混淆项**：R 的候选比 S/I 多经历一到两次额外的 LLM 改写。若 R 最终获胜，
+> ~~**已知混淆项**~~（已撤回，见上）：R 的候选比 S/I 多经历一到两次额外的 LLM 改写。若 R 最终获胜，
 > 「赢在反思反馈」与「赢在被迫多次压缩提炼」**目前分不开**。`compression_passes` 字段
 > 支持事后相关性检查。必须写进论文限制。
 

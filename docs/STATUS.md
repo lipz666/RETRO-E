@@ -29,8 +29,14 @@ round 1 已完成并冻结；round 2 的 E1 **seed 11 三个方法已全部跑�
 **小批次过拟合，三方法一致**：screen 第一名在 advance 上全部崩塌（0.725→0.500、
 0.750→0.412、0.700→0.425）。successive-halving 的设计在起作用。
 
-**长度膨胀是 `reflective` 特有的**：压缩触发 31 / 16 / 7。R 的候选比 S/I 多经历一到两次
-额外 LLM 改写 —— 计划里没有的方法间不对称，**已知混淆项**，必须写进论文限制。
+**~~长度膨胀是 `reflective` 特有的~~ —— 此条已撤回。** 压缩触发 31 / 16 / 7 不是方法差异：
+`propose_mutation` 是三个算子里唯一仍瞄准裸 token 上限的一个，headroom 因子当初只加到了
+`search_only` 与 `instruction_opt`。这是我的 prompt bug，不是 reflective 的内在倾向，
+因此**不构成 R vs S/I 的混淆项**。根因与修复见
+[experiment_registry.md](../reports/v2/experiment_registry.md) 的 2026-09-14（续 2）。
+
+但这不会让 seed 11 的方法排序变得可读——它不可读的原因更基本：单 seed、MDE 约 0.30、
+而三者差距只有 0.124。
 
 **`instruction_opt` 的控制不完美**：赢家文本边界审计未通过，含 `chemoselective`、
 `disconnections`、`oxidation` 等六个领域词汇。因此即便 I 表现差，也不能断言
