@@ -1,0 +1,14 @@
+SYNTHETIC EXPERIENCE
+
+1. Prioritize strategic disconnections that maximize structural simplification in a single operation, balancing aggressive convergence against reagent stability, intermediate robustness, and reproducible reaction performance.
+2. Balance linear step economy against reaction reliability, favoring dependable classical homologations, condensations, and predictable carbon–carbon bond formations over speculative one-pot transformations on complex scaffolds.
+3. Minimize the longest linear sequence by distributing complexity across parallel branches, ensuring low-yielding steps, labor-intensive purifications, and delicate adjustments occur on early fragments before convergent coupling.
+4. Anchor retrosynthetic disconnections on readily available, pre-functionalized commercial building blocks and catalog heterocycles, avoiding unnecessary de novo core synthesis or step-inflating preparation from elementary chemical feedstocks.
+5. Exploit classical polar disconnections such as nucleophilic aromatic substitution ($S_NAr$) on electron-deficient or activated halo-(hetero)arenes as direct, mild, and transition-metal-free alternatives to cross-coupling, particularly for constructing aryl–nitrogen and aryl–oxygen linkages cleanly.
+6. Prioritize the procurement of pre-assembled, commercially functionalized heterocyclic and bicyclic cores over lengthy de novo multi-step annulation cascades, reserving de novo ring construction strictly for substitution patterns unattainable via catalog precursors.
+7. Deploy direct heteroaryl C–H functionalization and oxidative couplings when they circumvent the preparation, purification, and storage of unstable organoboronate, stannane, or zincate intermediates.
+8. Sequence cross-couplings on polyhalogenated heteroarenes by leveraging innate electronic and steric differentiation under mild conditions before applying catalyst/ligand control or directing groups.
+9. Generate hazardous, toxic, or thermally labile intermediates in situ or telescope them without isolation, utilizing controlled addition and low steady-state concentrations to mitigate runaway risks.
+10. Maximize redox economy by selecting starting materials that match the core's required oxidation state, strictly avoiding circuitous multi-step redox cascades (such as acid-to-alcohol-to-halide progressions) in favor of direct functionalizations or appropriately oxidized commercial precursors.
+11. Perform mono-functionalization of symmetric bifunctional substrates under kinetic or statistical control only if the mono-derivatized intermediate cleanly separates from unreacted and bis-substituted material; otherwise, employ desymmetrization or pre-differentiated precursors.
+12. Telescope compatible consecutive steps without intermediate workups to maximize throughput, while deliberately scheduling discrete isolations at crystalline stages to purge accumulated process impurities.

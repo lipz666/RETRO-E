@@ -1,0 +1,175 @@
+{
+  "bootstrap": 10000,
+  "comparisons": {
+    "drop_M1_strategic_disconnection": {
+      "net_cluster_95ci": [
+        0.0,
+        0.4
+      ],
+      "net_full_over_drop": 0.2,
+      "pairs": 80,
+      "predicted_tags": [
+        "infeasible_key_transformation",
+        "structural_or_stereochemistry_omission"
+      ],
+      "tag_contrast": {
+        "chemoselectivity_conflict": 0.1733333333333333,
+        "graph_connectivity_error": -0.04,
+        "infeasible_key_transformation": 0.11076923076923079,
+        "missing_step": -0.01435897435897436,
+        "starting_material_availability_assumption": 0.02564102564102564,
+        "structural_or_stereochemistry_omission": -0.03487179487179487,
+        "unnecessary_protection_loop": -0.01435897435897436
+      },
+      "tag_rates": {
+        "drop_M1_strategic_disconnection": {
+          "_losses": 39,
+          "chemoselectivity_conflict": 0.3333333333333333,
+          "graph_connectivity_error": 0.0,
+          "infeasible_key_transformation": 0.23076923076923078,
+          "missing_step": 0.02564102564102564,
+          "starting_material_availability_assumption": 0.02564102564102564,
+          "structural_or_stereochemistry_omission": 0.20512820512820512,
+          "unnecessary_protection_loop": 0.02564102564102564
+        },
+        "full": {
+          "_losses": 25,
+          "chemoselectivity_conflict": 0.16,
+          "graph_connectivity_error": 0.04,
+          "infeasible_key_transformation": 0.12,
+          "missing_step": 0.04,
+          "starting_material_availability_assumption": 0.0,
+          "structural_or_stereochemistry_omission": 0.24,
+          "unnecessary_protection_loop": 0.04
+        }
+      },
+      "targets": 40
+    },
+    "drop_M2_selectivity_protection": {
+      "net_cluster_95ci": [
+        -0.275,
+        0.15
+      ],
+      "net_full_over_drop": -0.0625,
+      "pairs": 80,
+      "predicted_tags": [
+        "chemoselectivity_conflict",
+        "unnecessary_protection_loop"
+      ],
+      "tag_contrast": {
+        "chemoselectivity_conflict": 0.021428571428571436,
+        "graph_connectivity_error": 0.0026785714285714295,
+        "infeasible_key_transformation": 0.01607142857142857,
+        "missing_step": 0.0625,
+        "structural_or_stereochemistry_omission": -0.012500000000000011,
+        "unnecessary_protection_loop": 0.03392857142857143
+      },
+      "tag_rates": {
+        "drop_M2_selectivity_protection": {
+          "_losses": 32,
+          "chemoselectivity_conflict": 0.25,
+          "graph_connectivity_error": 0.03125,
+          "infeasible_key_transformation": 0.1875,
+          "missing_step": 0.0625,
+          "structural_or_stereochemistry_omission": 0.1875,
+          "unnecessary_protection_loop": 0.0625
+        },
+        "full": {
+          "_losses": 35,
+          "chemoselectivity_conflict": 0.22857142857142856,
+          "graph_connectivity_error": 0.02857142857142857,
+          "infeasible_key_transformation": 0.17142857142857143,
+          "missing_step": 0.0,
+          "structural_or_stereochemistry_omission": 0.2,
+          "unnecessary_protection_loop": 0.02857142857142857
+        }
+      },
+      "targets": 40
+    },
+    "drop_M3_sequencing_reliability": {
+      "net_cluster_95ci": [
+        -0.1375,
+        0.2625
+      ],
+      "net_full_over_drop": 0.0625,
+      "pairs": 80,
+      "predicted_tags": [
+        "graph_connectivity_error",
+        "missing_step",
+        "unresolved_intermediate"
+      ],
+      "tag_contrast": {
+        "chemoselectivity_conflict": -0.12745098039215685,
+        "graph_connectivity_error": 0.029411764705882353,
+        "infeasible_key_transformation": -0.08627450980392157,
+        "missing_step": -0.06666666666666667,
+        "structural_or_stereochemistry_omission": -0.0823529411764706,
+        "unnecessary_protection_loop": -0.00784313725490196,
+        "unresolved_intermediate": 0.0
+      },
+      "tag_rates": {
+        "drop_M3_sequencing_reliability": {
+          "_losses": 34,
+          "chemoselectivity_conflict": 0.20588235294117646,
+          "graph_connectivity_error": 0.029411764705882353,
+          "infeasible_key_transformation": 0.14705882352941177,
+          "missing_step": 0.0,
+          "structural_or_stereochemistry_omission": 0.11764705882352941,
+          "unnecessary_protection_loop": 0.058823529411764705
+        },
+        "full": {
+          "_losses": 30,
+          "chemoselectivity_conflict": 0.3333333333333333,
+          "graph_connectivity_error": 0.0,
+          "infeasible_key_transformation": 0.23333333333333334,
+          "missing_step": 0.06666666666666667,
+          "structural_or_stereochemistry_omission": 0.2,
+          "unnecessary_protection_loop": 0.06666666666666667
+        }
+      },
+      "targets": 40
+    },
+    "drop_M4_materials_complexity": {
+      "net_cluster_95ci": [
+        -0.1,
+        0.375
+      ],
+      "net_full_over_drop": 0.1375,
+      "pairs": 80,
+      "predicted_tags": [
+        "starting_material_availability_assumption"
+      ],
+      "tag_contrast": {
+        "chemoselectivity_conflict": -0.004537205081669715,
+        "graph_connectivity_error": -0.008166969147005446,
+        "infeasible_key_transformation": -0.10980036297640655,
+        "missing_step": -0.034482758620689655,
+        "starting_material_availability_assumption": 0.0,
+        "structural_or_stereochemistry_omission": -0.004537205081669715,
+        "unnecessary_protection_loop": -0.008166969147005446
+      },
+      "tag_rates": {
+        "drop_M4_materials_complexity": {
+          "_losses": 38,
+          "chemoselectivity_conflict": 0.23684210526315788,
+          "graph_connectivity_error": 0.02631578947368421,
+          "infeasible_key_transformation": 0.13157894736842105,
+          "missing_step": 0.0,
+          "structural_or_stereochemistry_omission": 0.23684210526315788,
+          "unnecessary_protection_loop": 0.02631578947368421
+        },
+        "full": {
+          "_losses": 29,
+          "chemoselectivity_conflict": 0.2413793103448276,
+          "graph_connectivity_error": 0.034482758620689655,
+          "infeasible_key_transformation": 0.2413793103448276,
+          "missing_step": 0.034482758620689655,
+          "structural_or_stereochemistry_omission": 0.2413793103448276,
+          "unnecessary_protection_loop": 0.034482758620689655
+        }
+      },
+      "targets": 40
+    }
+  },
+  "seed": 20260913
+}

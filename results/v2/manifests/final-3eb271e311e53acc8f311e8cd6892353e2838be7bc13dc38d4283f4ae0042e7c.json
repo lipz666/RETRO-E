@@ -47,7 +47,7 @@
       "pilot_targets": "/Users/lpz/Desktop/AtomFlow/RETRO-E/data/v2/external_audit_panel.jsonl",
       "results_dir": "/Users/lpz/Desktop/AtomFlow/RETRO-E/results/v2",
       "selection_targets": "/Users/lpz/Desktop/AtomFlow/RETRO-E/data/processed/selection_targets.jsonl",
-      "system_prompt": "/Users/lpz/Desktop/AtomFlow/RETRO-E/prompts/system_v1.txt",
+      "system_prompt": "/Users/lpz/Desktop/AtomFlow/RETRO-E/prompts/system_v1_e3_order.txt",
       "test_targets": "/Users/lpz/Desktop/AtomFlow/RETRO-E/data/v2/holdout_new_targets.jsonl",
       "train_targets": "/Users/lpz/Desktop/AtomFlow/RETRO-E/data/processed/train_targets.jsonl"
     },
@@ -67,7 +67,7 @@
         "reflective_vs_search_only",
         "reflective_vs_instruction_opt"
       ],
-      "system_prompt_version": "system_v1"
+      "system_prompt_version": "system_v1_e3_order"
     },
     "roles": {
       "external_generator": "RETRO_E_V2_EXTERNAL_GENERATOR_MODEL",
@@ -78,16 +78,15 @@
     },
     "root": "/Users/lpz/Desktop/AtomFlow/RETRO-E"
   },
-  "created_at": "2026-09-13T14:47:09.372542+00:00",
+  "created_at": "2026-09-13T15:26:42.146501+00:00",
   "file_sha256": {
-    "config/v2_pilot.toml": "bfc7ecedd875f44b8bbdb9ba4874d3f31e9002709bc2bbd94549bcbe914ab360",
+    "config/v2_e3_transfer.toml": "28d5a249b9faf157039b10175e4c532238bccac6bcb12ab2b4549213c90bf083",
     "contexts/experience_E0.md": "1c7d1a80b1ce33be992ca126ebf36103050962166f747bb32572634d7c8486f7",
-    "data/processed/experience_source_routes.jsonl": "4d7a4db51c11c1a6c900ec92e67a50c816d9e7d3f9ac6a73bb981b127bf8ac2c",
-    "data/processed/optimizer_targets.jsonl": "f38cc651749f6c33b94cedab700b406856b9aa66eb86834afd36813643183ddc",
-    "data/processed/selection_targets.jsonl": "447c45aebd76f938ece71654fd0d0f4b27c54b6189812a02b39e5e2ffaf53547",
-    "prompts/experience_synthesis_v1.txt": "c1720f3295545dcb5b1686d45e13bc00ff8c7b1c4e248f022969ab3c630c9e6f",
+    "contexts/experience_E_star.md": "ddbb85540fe1342b30b3c851c5962a93b1a4ae22160cfadb80f1456a184a4f00",
+    "contexts/experience_control.md": "014d7cb99b2b5e485e5eb87feea8d35f9ca201d1ebc1903aea6c94cfe3b273d1",
+    "data/v2/holdout_new_targets.jsonl": "92a9de4f0ec66cd9be7b32f65edfd524e47653b40f8c623254a5bd191a46deb3",
     "prompts/judge_v3.txt": "375ad4e000ebde24f943d0d0129b1bae53678dbae43e557b9613d1ddf8452ac6",
-    "prompts/system_v1.txt": "3caefc8eebeaf59ae59c3d5af6c5361bb5d1f65827f5a777d6014b3c0ef7b3bd",
+    "prompts/system_v1_e3_order.txt": "900d1138f8ee3ef8e3a8d1366f63379cdfbfaa2d231d113797c1050adec3f836",
     "schemas/experience_route.schema.json": "63db28d23cd24be2632766bc2a841360132ab2d012bf4685c35b7ce88eae7710",
     "schemas/target.schema.json": "8dd3044e1131c3ebfae5eb9c92ecfb1f7bda8df8ec0f7ad08fce17a8798e5178",
     "src/retro_e/__init__.py": "506e306a42f2b6a253d14ec672ff775334ef40115dd4c29982031fd2adf51857",
@@ -105,9 +104,9 @@
     "src/retro_e/validation.py": "f50cf1e7ddb7583207a25747eb0f6a153c11200c63ec470757f118034468003a"
   },
   "metadata": {
-    "stage": "optimization"
+    "stage": "final"
   },
-  "protocol_sha256": "c7a4001867a5a92b6385c3460de4e1fc3a0a3ea3ecac3fd71825eb24da3b8b7e",
+  "protocol_sha256": "3eb271e311e53acc8f311e8cd6892353e2838be7bc13dc38d4283f4ae0042e7c",
   "resolved_models": {
     "generator": "gemini-3.8-flash-high",
     "judge": "gemini-3.7-flash-high",

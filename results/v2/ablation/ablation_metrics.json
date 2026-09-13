@@ -1,0 +1,340 @@
+{
+  "caveats": [
+    "Deleting a module also shortens the context, so a quality drop has both a content and a length explanation. The plan's follow-up is a length-matched neutral substitution for the strongest module.",
+    "M4 removes only about 12% of tokens against about 29% for the others, so it is a weaker intervention and a null result there says less.",
+    "Error tags are the judge's automatic labels, not expert annotations. Plan section 5.3 requires expert spot-calibration before they carry chemical weight."
+  ],
+  "comparisons": {
+    "full_vs_drop_M1_strategic_disconnection": {
+      "full_losses": 25,
+      "full_wins": 42,
+      "net_win_rate_full_over_drop": 0.21518987341772153,
+      "pairs": 79,
+      "tag_counts_when_condition_lost": {
+        "drop_M1_strategic_disconnection": {
+          "chemoselectivity_conflict": 13,
+          "infeasible_key_transformation": 9,
+          "missing_step": 1,
+          "starting_material_availability_assumption": 1,
+          "structural_or_stereochemistry_omission": 8,
+          "unnecessary_protection_loop": 1
+        },
+        "full": {
+          "chemoselectivity_conflict": 4,
+          "graph_connectivity_error": 1,
+          "infeasible_key_transformation": 3,
+          "missing_step": 1,
+          "structural_or_stereochemistry_omission": 6,
+          "unnecessary_protection_loop": 1
+        }
+      },
+      "tag_rate_when_condition_lost": {
+        "drop_M1_strategic_disconnection": {
+          "chemoselectivity_conflict": 0.333,
+          "infeasible_key_transformation": 0.231,
+          "missing_step": 0.026,
+          "starting_material_availability_assumption": 0.026,
+          "structural_or_stereochemistry_omission": 0.205,
+          "unnecessary_protection_loop": 0.026
+        },
+        "full": {
+          "chemoselectivity_conflict": 0.167,
+          "graph_connectivity_error": 0.042,
+          "infeasible_key_transformation": 0.125,
+          "missing_step": 0.042,
+          "structural_or_stereochemistry_omission": 0.25,
+          "unnecessary_protection_loop": 0.042
+        }
+      },
+      "ties": 12,
+      "times_condition_lost": {
+        "drop_M1_strategic_disconnection": 39,
+        "full": 24
+      },
+      "votes_without_structured_verdict": 4
+    },
+    "full_vs_drop_M2_selectivity_protection": {
+      "full_losses": 37,
+      "full_wins": 31,
+      "net_win_rate_full_over_drop": -0.0759493670886076,
+      "pairs": 79,
+      "tag_counts_when_condition_lost": {
+        "drop_M2_selectivity_protection": {
+          "chemoselectivity_conflict": 8,
+          "graph_connectivity_error": 1,
+          "infeasible_key_transformation": 6,
+          "missing_step": 2,
+          "structural_or_stereochemistry_omission": 6,
+          "unnecessary_protection_loop": 2
+        },
+        "full": {
+          "chemoselectivity_conflict": 8,
+          "graph_connectivity_error": 1,
+          "infeasible_key_transformation": 6,
+          "structural_or_stereochemistry_omission": 7,
+          "unnecessary_protection_loop": 1
+        }
+      },
+      "tag_rate_when_condition_lost": {
+        "drop_M2_selectivity_protection": {
+          "chemoselectivity_conflict": 0.258,
+          "graph_connectivity_error": 0.032,
+          "infeasible_key_transformation": 0.194,
+          "missing_step": 0.065,
+          "structural_or_stereochemistry_omission": 0.194,
+          "unnecessary_protection_loop": 0.065
+        },
+        "full": {
+          "chemoselectivity_conflict": 0.229,
+          "graph_connectivity_error": 0.029,
+          "infeasible_key_transformation": 0.171,
+          "structural_or_stereochemistry_omission": 0.2,
+          "unnecessary_protection_loop": 0.029
+        }
+      },
+      "ties": 11,
+      "times_condition_lost": {
+        "drop_M2_selectivity_protection": 31,
+        "full": 35
+      },
+      "votes_without_structured_verdict": 2
+    },
+    "full_vs_drop_M3_sequencing_reliability": {
+      "full_losses": 31,
+      "full_wins": 35,
+      "net_win_rate_full_over_drop": 0.05063291139240506,
+      "pairs": 79,
+      "tag_counts_when_condition_lost": {
+        "drop_M3_sequencing_reliability": {
+          "chemoselectivity_conflict": 7,
+          "graph_connectivity_error": 1,
+          "infeasible_key_transformation": 4,
+          "structural_or_stereochemistry_omission": 4,
+          "unnecessary_protection_loop": 2
+        },
+        "full": {
+          "chemoselectivity_conflict": 10,
+          "infeasible_key_transformation": 7,
+          "missing_step": 2,
+          "structural_or_stereochemistry_omission": 6,
+          "unnecessary_protection_loop": 2
+        }
+      },
+      "tag_rate_when_condition_lost": {
+        "drop_M3_sequencing_reliability": {
+          "chemoselectivity_conflict": 0.212,
+          "graph_connectivity_error": 0.03,
+          "infeasible_key_transformation": 0.121,
+          "structural_or_stereochemistry_omission": 0.121,
+          "unnecessary_protection_loop": 0.061
+        },
+        "full": {
+          "chemoselectivity_conflict": 0.333,
+          "infeasible_key_transformation": 0.233,
+          "missing_step": 0.067,
+          "structural_or_stereochemistry_omission": 0.2,
+          "unnecessary_protection_loop": 0.067
+        }
+      },
+      "ties": 13,
+      "times_condition_lost": {
+        "drop_M3_sequencing_reliability": 33,
+        "full": 30
+      },
+      "votes_without_structured_verdict": 3
+    },
+    "full_vs_drop_M4_materials_complexity": {
+      "full_losses": 30,
+      "full_wins": 40,
+      "net_win_rate_full_over_drop": 0.12658227848101267,
+      "pairs": 79,
+      "tag_counts_when_condition_lost": {
+        "drop_M4_materials_complexity": {
+          "chemoselectivity_conflict": 9,
+          "graph_connectivity_error": 1,
+          "infeasible_key_transformation": 5,
+          "structural_or_stereochemistry_omission": 9,
+          "unnecessary_protection_loop": 1
+        },
+        "full": {
+          "chemoselectivity_conflict": 7,
+          "graph_connectivity_error": 1,
+          "infeasible_key_transformation": 7,
+          "missing_step": 1,
+          "structural_or_stereochemistry_omission": 7,
+          "unnecessary_protection_loop": 1
+        }
+      },
+      "tag_rate_when_condition_lost": {
+        "drop_M4_materials_complexity": {
+          "chemoselectivity_conflict": 0.237,
+          "graph_connectivity_error": 0.026,
+          "infeasible_key_transformation": 0.132,
+          "structural_or_stereochemistry_omission": 0.237,
+          "unnecessary_protection_loop": 0.026
+        },
+        "full": {
+          "chemoselectivity_conflict": 0.241,
+          "graph_connectivity_error": 0.034,
+          "infeasible_key_transformation": 0.241,
+          "missing_step": 0.034,
+          "structural_or_stereochemistry_omission": 0.241,
+          "unnecessary_protection_loop": 0.034
+        }
+      },
+      "ties": 9,
+      "times_condition_lost": {
+        "drop_M4_materials_complexity": 38,
+        "full": 29
+      },
+      "votes_without_structured_verdict": 3
+    }
+  },
+  "created_at": "2026-09-13T15:13:39.785243+00:00",
+  "generator": "gemini-3.8-flash-high",
+  "judge": "gemini-3.7-flash-high",
+  "module_spec": {
+    "entries_total": 16,
+    "full": {
+      "file": "contexts/v2/e4_ablation/full_E_star.md",
+      "locked_tokens": 755
+    },
+    "length_confound_note": "Deleting a module shortens the context. A drop in quality therefore has two candidate explanations: the module's content, and the shorter prompt. The plan's follow-up for the strongest module is a length-matched neutral substitution.",
+    "module_assignment_frozen_in": "reports/v2/e0_estar_semantic_diff.md",
+    "source": "contexts/experience_E_star.md",
+    "variants": {
+      "M1_strategic_disconnection": {
+        "dropped_entries": [
+          1,
+          2,
+          3,
+          8,
+          10
+        ],
+        "entries_remaining": 11,
+        "file": "contexts/v2/e4_ablation/drop_M1_strategic_disconnection.md",
+        "fraction_removed": 0.2914,
+        "label": "战略断键与收敛",
+        "locked_tokens": 535,
+        "predicted_error_tags": [
+          "structural_or_stereochemistry_omission",
+          "infeasible_key_transformation"
+        ],
+        "tokens_removed": 220
+      },
+      "M2_selectivity_protection": {
+        "dropped_entries": [
+          5,
+          6,
+          7,
+          16
+        ],
+        "entries_remaining": 12,
+        "file": "contexts/v2/e4_ablation/drop_M2_selectivity_protection.md",
+        "fraction_removed": 0.294,
+        "label": "选择性与保护",
+        "locked_tokens": 533,
+        "predicted_error_tags": [
+          "chemoselectivity_conflict",
+          "unnecessary_protection_loop"
+        ],
+        "tokens_removed": 222
+      },
+      "M3_sequencing_reliability": {
+        "dropped_entries": [
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "entries_remaining": 11,
+        "file": "contexts/v2/e4_ablation/drop_M3_sequencing_reliability.md",
+        "fraction_removed": 0.2848,
+        "label": "步骤排序与可靠性",
+        "locked_tokens": 540,
+        "predicted_error_tags": [
+          "missing_step",
+          "unresolved_intermediate",
+          "graph_connectivity_error"
+        ],
+        "tokens_removed": 215
+      },
+      "M4_materials_complexity": {
+        "dropped_entries": [
+          4,
+          9
+        ],
+        "entries_remaining": 14,
+        "file": "contexts/v2/e4_ablation/drop_M4_materials_complexity.md",
+        "fraction_removed": 0.1205,
+        "label": "原料与复杂度分配",
+        "locked_tokens": 664,
+        "predicted_error_tags": [
+          "starting_material_availability_assumption"
+        ],
+        "tokens_removed": 91
+      }
+    }
+  },
+  "phase": "v2_pilot",
+  "predeclared_predictions": {
+    "drop_M1_strategic_disconnection": [
+      "structural_or_stereochemistry_omission",
+      "infeasible_key_transformation"
+    ],
+    "drop_M2_selectivity_protection": [
+      "chemoselectivity_conflict",
+      "unnecessary_protection_loop"
+    ],
+    "drop_M3_sequencing_reliability": [
+      "missing_step",
+      "unresolved_intermediate",
+      "graph_connectivity_error"
+    ],
+    "drop_M4_materials_complexity": [
+      "starting_material_availability_assumption"
+    ]
+  },
+  "protocol_sha256": "c7a4001867a5a92b6385c3460de4e1fc3a0a3ea3ecac3fd71825eb24da3b8b7e",
+  "question": "Q6 -- does deleting a module change the errors that module addresses?",
+  "samples_per_target": 2,
+  "stage": "e4_module_intervention",
+  "targets": 40,
+  "targets_file_sha256": "6e90831c2014e385a91631b3f56c8b17e640b06c0936ec3baa68228cc3789abd",
+  "validity_by_condition": {
+    "drop_M1_strategic_disconnection": {
+      "generations": 80,
+      "invalid": 3,
+      "invalid_rate": 0.0375
+    },
+    "drop_M2_selectivity_protection": {
+      "generations": 80,
+      "invalid": 0,
+      "invalid_rate": 0.0
+    },
+    "drop_M3_sequencing_reliability": {
+      "generations": 80,
+      "invalid": 2,
+      "invalid_rate": 0.025
+    },
+    "drop_M4_materials_complexity": {
+      "generations": 80,
+      "invalid": 3,
+      "invalid_rate": 0.0375
+    },
+    "full": {
+      "generations": 79,
+      "invalid": 1,
+      "invalid_rate": 0.012658227848101266
+    }
+  },
+  "variant_file_sha256": {
+    "drop_M1_strategic_disconnection": "71b05a3e49cd541d72b2e4f9cfec4d8c4a936c92c779e702a09c42bc4a4b7c1a",
+    "drop_M2_selectivity_protection": "5aac588ce91851de36494288daa3a4e2cb0ea6ceb09bd3ad9cc6756b54e67401",
+    "drop_M3_sequencing_reliability": "ff9f314239089f107e18d1c51a29c6ba146da19c24f316e6079f3accc6ac44cf",
+    "drop_M4_materials_complexity": "27a6a933b00cc89ce13600f6913fd5e359b59605d2cde0fe10ba802887492a6f",
+    "full": "ddbb85540fe1342b30b3c851c5962a93b1a4ae22160cfadb80f1456a184a4f00"
+  },
+  "votes_per_pair": 1
+}

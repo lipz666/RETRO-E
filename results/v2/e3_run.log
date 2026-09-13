@@ -1,0 +1,228 @@
+2026-09-13 23:26:42,220 INFO E3 transfer: generator=gpt-5.6-luna judge=gemini-3.7-flash-high targets=40 conditions=3
+2026-09-13 23:27:44,178 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:27:50,634 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:27:53,290 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:28:22,686 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:28:24,706 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:29:18,905 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:29:41,744 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:30:22,793 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:30:35,635 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:30:44,514 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:31:16,230 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:31:38,116 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:31:50,913 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:31:57,259 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:31:58,133 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:33:12,347 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:33:20,161 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:33:22,023 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:33:57,268 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 524 <none>"
+2026-09-13 23:34:21,604 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:34:35,225 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:34:36,685 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:35:43,613 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:35:47,928 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:36:43,077 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 524 <none>"
+2026-09-13 23:37:01,871 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:37:14,868 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:37:35,284 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:38:46,402 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:39:01,755 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:39:21,498 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 524 <none>"
+2026-09-13 23:40:11,297 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:40:12,055 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:40:39,789 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 524 <none>"
+2026-09-13 23:41:18,329 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:41:26,060 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:41:46,663 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:42:36,114 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:42:48,392 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:42:49,896 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 524 <none>"
+2026-09-13 23:42:54,552 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:44:14,610 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:44:32,215 ERROR baseline generation failed after retries
+Traceback (most recent call last):
+  File "/Users/lpz/Desktop/AtomFlow/RETRO-E/scripts/run_e3_transfer.py", line 141, in generate_condition
+    append_jsonl(output, future.result())
+                         ~~~~~~~~~~~~~^^
+  File "/Users/lpz/.local/share/uv/python/cpython-3.13.14-macos-aarch64-none/lib/python3.13/concurrent/futures/_base.py", line 453, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "/Users/lpz/.local/share/uv/python/cpython-3.13.14-macos-aarch64-none/lib/python3.13/concurrent/futures/_base.py", line 402, in __get_result
+    raise self._exception
+  File "/Users/lpz/.local/share/uv/python/cpython-3.13.14-macos-aarch64-none/lib/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Users/lpz/Desktop/AtomFlow/RETRO-E/scripts/run_e3_transfer.py", line 74, in generate_one
+    completion = client.complete(
+        prompt,
+    ...<3 lines>...
+        model=config.generator_model,
+    )
+  File "/Users/lpz/Desktop/AtomFlow/RETRO-E/src/retro_e/api.py", line 74, in complete
+    response = self._request("POST", self.config.api.chat_completions_path, json=payload)
+  File "/Users/lpz/Desktop/AtomFlow/RETRO-E/src/retro_e/api.py", line 123, in _request
+    raise APIError(f"API request failed after retries: {last_error}")
+retro_e.api.APIError: API request failed after retries: Server disconnected without sending a response.
+2026-09-13 23:46:17,519 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:46:39,941 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 524 <none>"
+2026-09-13 23:48:36,138 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:48:36,150 INFO generated baseline: {'planned': 40, 'skipped': 0, 'completed': 39, 'failed': 1}
+2026-09-13 23:49:37,589 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:49:41,487 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:50:05,092 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:50:32,442 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:50:42,499 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:51:05,422 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:51:24,267 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:52:01,361 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:52:05,408 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:52:14,415 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:52:49,144 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 524 <none>"
+2026-09-13 23:53:24,148 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:53:29,337 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:53:51,887 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:54:13,087 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:54:52,839 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:55:01,221 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:55:34,179 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:55:45,428 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:56:55,645 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:57:09,556 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:57:59,474 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:58:07,680 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:58:26,366 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:58:52,483 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 23:59:40,348 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:00:06,800 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:00:43,585 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:01:12,497 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:01:46,593 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 524 <none>"
+2026-09-14 00:01:47,476 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:02:09,861 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:02:14,305 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:03:29,575 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:03:48,003 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:03:54,147 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 524 <none>"
+2026-09-14 00:04:42,247 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:05:11,557 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:05:41,874 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:06:24,275 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:07:32,251 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:07:35,033 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:09:05,972 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:09:05,988 INFO generated E0: {'planned': 40, 'skipped': 0, 'completed': 40, 'failed': 0}
+2026-09-14 00:09:52,307 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:10:12,376 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:10:50,751 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:10:52,675 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:11:12,540 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 524 <none>"
+2026-09-14 00:11:48,099 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:12:18,706 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:12:23,909 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:12:55,962 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:13:41,212 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:13:41,263 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:13:46,890 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:14:03,565 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:14:27,580 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:14:46,576 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:14:58,554 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:16:01,660 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:16:01,799 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:16:37,221 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:17:09,935 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:17:27,304 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:17:41,622 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:18:12,286 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:19:00,746 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:19:04,547 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:19:12,825 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:19:39,803 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:20:17,094 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:20:45,433 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:21:09,722 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:21:48,563 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:21:50,215 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:22:37,592 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:22:37,767 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:22:49,856 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:23:10,614 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:23:42,739 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:24:07,336 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:24:14,312 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:25:41,071 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:27:16,210 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 524 <none>"
+2026-09-14 00:29:24,997 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 524 <none>"
+2026-09-14 00:32:59,931 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:33:00,087 INFO generated E_star: {'planned': 40, 'skipped': 0, 'completed': 40, 'failed': 0}
+2026-09-14 00:33:08,470 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:33:10,036 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:33:11,839 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:33:11,869 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:33:16,465 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:33:18,674 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:33:24,718 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:33:24,719 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:33:28,554 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:33:29,775 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:33:34,037 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:33:37,349 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:33:39,088 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:33:39,091 INFO judged E_star_vs_baseline_transfer
+2026-09-14 00:33:47,176 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:33:47,450 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:33:48,069 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:33:48,080 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:33:55,807 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:33:56,180 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:33:56,401 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:33:57,027 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:34:03,938 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:34:04,458 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:34:06,675 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:34:14,807 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:34:17,703 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:34:20,159 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:34:23,775 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:34:24,319 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:34:28,120 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:34:29,416 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:34:31,619 INFO HTTP Request: POST https://vps.lpzproxy.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 00:34:31,625 INFO judged E_star_vs_E0_transfer
+2026-09-14 00:34:31,651 INFO wrote /Users/lpz/Desktop/AtomFlow/RETRO-E/results/v2/transfer/transfer_metrics.json
+{
+  "comparisons": {
+    "E_star_vs_E0": {
+      "losses": 14,
+      "net_win_rate": -0.05,
+      "pairs": 40,
+      "ties": 14,
+      "wins": 12
+    },
+    "E_star_vs_baseline": {
+      "losses": 15,
+      "net_win_rate": 0.0,
+      "pairs": 39,
+      "ties": 9,
+      "wins": 15
+    }
+  },
+  "validity": {
+    "E0": {
+      "generations": 40,
+      "invalid": 14,
+      "invalid_rate": 0.35
+    },
+    "E_star": {
+      "generations": 40,
+      "invalid": 18,
+      "invalid_rate": 0.45
+    },
+    "baseline": {
+      "generations": 39,
+      "invalid": 15,
+      "invalid_rate": 0.38461538461538464
+    }
+  }
+}

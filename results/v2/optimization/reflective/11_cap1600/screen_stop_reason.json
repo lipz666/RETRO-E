@@ -1,0 +1,49 @@
+{
+  "attempts": 5,
+  "created_at": "2026-09-13T15:41:31.406499+00:00",
+  "parent_id": "5b2fcf7e4d3e485d",
+  "reason": "no_admissible_candidate",
+  "rejected": [
+    {
+      "attempt": 0,
+      "candidate_id": "4ee267e2e7435727",
+      "duplicate": false,
+      "leaks": [],
+      "locked_tokens": 1776,
+      "over_budget": true
+    },
+    {
+      "attempt": 1,
+      "candidate_id": "d2d16d9476ac9fe7",
+      "duplicate": false,
+      "leaks": [],
+      "locked_tokens": 1893,
+      "over_budget": true
+    },
+    {
+      "attempt": 2,
+      "candidate_id": "8a9ec8b2979a34a9",
+      "duplicate": false,
+      "leaks": [],
+      "locked_tokens": 1793,
+      "over_budget": true
+    },
+    {
+      "attempt": 3,
+      "candidate_id": "5318b7286d497554",
+      "duplicate": false,
+      "leaks": [],
+      "locked_tokens": 1851,
+      "over_budget": true
+    },
+    {
+      "attempt": 4,
+      "candidate_id": "0b5fda22ac8fff08",
+      "duplicate": false,
+      "leaks": [],
+      "locked_tokens": 1950,
+      "over_budget": true
+    }
+  ],
+  "slots_filled": 4
+}

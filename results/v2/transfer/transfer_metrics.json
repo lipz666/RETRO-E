@@ -1,0 +1,52 @@
+{
+  "caveats": [
+    "The external generator violates the step-ordering contract: step 1's product must be the requested target and each later step's product must have appeared as an earlier precursor, but it emits steps in forward synthesis order. Measured 4/10 valid on panel targets. This is a semantic contract failure, not a formatting one, and is NOT repaired: invalid routes are retained and resolved by the predeclared validity rule, identically for baseline, E0 and E_star.",
+    "The judge shares a model family with the generator E* was trained against, so this is not a fully independent generate-evaluate pairing.",
+    "40 targets: a null result here does not rule out a small transfer effect (plan section 8.2).",
+    "If the external generator's baseline is weak or its invalid rate high, the comparison says more about format handling than about transfer."
+  ],
+  "comparisons": {
+    "E_star_vs_E0": {
+      "losses": 14,
+      "net_win_rate": -0.05,
+      "pairs": 40,
+      "ties": 14,
+      "wins": 12
+    },
+    "E_star_vs_baseline": {
+      "losses": 16,
+      "net_win_rate": -0.025,
+      "pairs": 40,
+      "ties": 9,
+      "wins": 15
+    }
+  },
+  "context_source": "frozen legacy E* (round 1), used verbatim, nothing retuned",
+  "created_at": "2026-09-13T16:36:49.258256+00:00",
+  "judge": "gemini-3.7-flash-high",
+  "phase": "v2_pilot",
+  "protocol_sha256": "3eb271e311e53acc8f311e8cd6892353e2838be7bc13dc38d4283f4ae0042e7c",
+  "question": "Q5 -- does experience learned by one model transfer verbatim to another?",
+  "samples_per_target": 1,
+  "stage": "e3_zero_shot_transfer",
+  "targets": 40,
+  "transfer_generator": "gpt-5.6-luna",
+  "validity_by_condition": {
+    "E0": {
+      "generations": 40,
+      "invalid": 14,
+      "invalid_rate": 0.35
+    },
+    "E_star": {
+      "generations": 40,
+      "invalid": 18,
+      "invalid_rate": 0.45
+    },
+    "baseline": {
+      "generations": 40,
+      "invalid": 15,
+      "invalid_rate": 0.375
+    }
+  },
+  "votes_per_pair": 1
+}

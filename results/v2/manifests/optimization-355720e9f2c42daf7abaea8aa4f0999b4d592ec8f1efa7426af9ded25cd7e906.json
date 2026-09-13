@@ -12,7 +12,7 @@
     },
     "context": {
       "max_e_star_ratio": 1.1,
-      "target_tokens": 800,
+      "target_tokens": 1600,
       "tokenizer": "o200k_base"
     },
     "generation": {
@@ -78,9 +78,9 @@
     },
     "root": "/Users/lpz/Desktop/AtomFlow/RETRO-E"
   },
-  "created_at": "2026-09-13T14:47:09.372542+00:00",
+  "created_at": "2026-09-13T14:47:09.428943+00:00",
   "file_sha256": {
-    "config/v2_pilot.toml": "bfc7ecedd875f44b8bbdb9ba4874d3f31e9002709bc2bbd94549bcbe914ab360",
+    "config/v2_capacity.toml": "79d12c660ac26275d7b1e03c44bf63b651df27ef9f1f05a5ba7841dc978c5fc5",
     "contexts/experience_E0.md": "1c7d1a80b1ce33be992ca126ebf36103050962166f747bb32572634d7c8486f7",
     "data/processed/experience_source_routes.jsonl": "4d7a4db51c11c1a6c900ec92e67a50c816d9e7d3f9ac6a73bb981b127bf8ac2c",
     "data/processed/optimizer_targets.jsonl": "f38cc651749f6c33b94cedab700b406856b9aa66eb86834afd36813643183ddc",
@@ -107,7 +107,7 @@
   "metadata": {
     "stage": "optimization"
   },
-  "protocol_sha256": "c7a4001867a5a92b6385c3460de4e1fc3a0a3ea3ecac3fd71825eb24da3b8b7e",
+  "protocol_sha256": "355720e9f2c42daf7abaea8aa4f0999b4d592ec8f1efa7426af9ded25cd7e906",
   "resolved_models": {
     "generator": "gemini-3.8-flash-high",
     "judge": "gemini-3.7-flash-high",

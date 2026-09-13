@@ -21,3 +21,7 @@ data/raw/*
 !data/raw/.gitkeep
 data/interim/*
 !data/interim/.gitkeep
+
+# Stray screenshots dropped into the repo root; not project output.
+Codex */
+Codex *.png

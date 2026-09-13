@@ -1,0 +1,84 @@
+{
+  "entries_total": 16,
+  "full": {
+    "file": "contexts/v2/e4_ablation/full_E_star.md",
+    "locked_tokens": 755
+  },
+  "length_confound_note": "Deleting a module shortens the context. A drop in quality therefore has two candidate explanations: the module's content, and the shorter prompt. The plan's follow-up for the strongest module is a length-matched neutral substitution.",
+  "module_assignment_frozen_in": "reports/v2/e0_estar_semantic_diff.md",
+  "source": "contexts/experience_E_star.md",
+  "variants": {
+    "M1_strategic_disconnection": {
+      "dropped_entries": [
+        1,
+        2,
+        3,
+        8,
+        10
+      ],
+      "entries_remaining": 11,
+      "file": "contexts/v2/e4_ablation/drop_M1_strategic_disconnection.md",
+      "fraction_removed": 0.2914,
+      "label": "战略断键与收敛",
+      "locked_tokens": 535,
+      "predicted_error_tags": [
+        "structural_or_stereochemistry_omission",
+        "infeasible_key_transformation"
+      ],
+      "tokens_removed": 220
+    },
+    "M2_selectivity_protection": {
+      "dropped_entries": [
+        5,
+        6,
+        7,
+        16
+      ],
+      "entries_remaining": 12,
+      "file": "contexts/v2/e4_ablation/drop_M2_selectivity_protection.md",
+      "fraction_removed": 0.294,
+      "label": "选择性与保护",
+      "locked_tokens": 533,
+      "predicted_error_tags": [
+        "chemoselectivity_conflict",
+        "unnecessary_protection_loop"
+      ],
+      "tokens_removed": 222
+    },
+    "M3_sequencing_reliability": {
+      "dropped_entries": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "entries_remaining": 11,
+      "file": "contexts/v2/e4_ablation/drop_M3_sequencing_reliability.md",
+      "fraction_removed": 0.2848,
+      "label": "步骤排序与可靠性",
+      "locked_tokens": 540,
+      "predicted_error_tags": [
+        "missing_step",
+        "unresolved_intermediate",
+        "graph_connectivity_error"
+      ],
+      "tokens_removed": 215
+    },
+    "M4_materials_complexity": {
+      "dropped_entries": [
+        4,
+        9
+      ],
+      "entries_remaining": 14,
+      "file": "contexts/v2/e4_ablation/drop_M4_materials_complexity.md",
+      "fraction_removed": 0.1205,
+      "label": "原料与复杂度分配",
+      "locked_tokens": 664,
+      "predicted_error_tags": [
+        "starting_material_availability_assumption"
+      ],
+      "tokens_removed": 91
+    }
+  }
+}
