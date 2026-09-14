@@ -1,0 +1,30 @@
+{
+  "created_at": "2026-09-14T08:06:42.533341+00:00",
+  "full_schedule": true,
+  "generator_model": "gemini-3.8-flash-high",
+  "judge_model": "gemini-3.7-flash-high",
+  "locked_tokens": 621,
+  "method": "reflective",
+  "note": "Winner frozen on selection reward alone. dev_new was not consulted and must not be used to re-pick a winner (plan v2 section 6.2).",
+  "optimizer_seed": 11,
+  "protocol_sha256": "ca5da626f5cc79288aa9db3c686aa5d23765b2322ecd801d79c5df32acca21a5",
+  "schedule": {
+    "advance_keep": 4,
+    "advance_targets": 40,
+    "candidate_slots": 16,
+    "samples": 1,
+    "screen_targets": 20,
+    "selection_keep": 2,
+    "selection_targets": 40,
+    "votes": 1
+  },
+  "screen_candidates_evaluated": 16,
+  "selection_candidates": {
+    "002fdea816093e3c": 0.5125,
+    "36a323c06f0552d3": 0.5
+  },
+  "selection_reward": 0.5125,
+  "shared_cap_tokens": 800,
+  "winner_candidate_id": "002fdea816093e3c",
+  "winner_parent_id": "36a323c06f0552d3"
+}

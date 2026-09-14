@@ -56,30 +56,56 @@ logger = logging.getLogger(__name__)
 ROOT = Path(__file__).resolve().parent.parent
 TARGETS_FILE = ROOT / "data/v2/expA_eval_targets.jsonl"
 R_EMPTY_DIR = ROOT / "contexts/v2/reflective/11_empty"
+R_E0_DIR = ROOT / "contexts/v2/reflective/11_e0match"
 SAMPLES = 2
-COMPARISONS = (("R_empty", "E0"), ("R_empty", "E_star"), ("E_star", "E0"))
+
+# R_empty vs R_E0 is the primary comparison: same operator, same 16-4-2 schedule, same cap,
+# same optimizer seed, same length-drift rule. Only the seed context differs, so it is the
+# one contrast with a single variable.
+#
+# E_star vs E0 is a positive control, not a hypothesis. It should reproduce round-1 H2 at
+# +0.13 to +0.14 on these fresh targets. If it does not, the apparatus is not measuring what
+# it measured in round 1 and nothing else here carries weight.
+#
+# R_empty vs E0 is descriptive. E0 was never optimised and is 736 tokens against R_empty's
+# 318, so a difference confounds seed provenance with optimisation and with length.
+#
+# R_empty vs E_star was dropped: E_star came from round 1's older operator and 24-6-2
+# schedule, adding two more differences on top of those, for no question the others do not
+# already answer better.
+COMPARISONS = (("R_empty", "R_E0"), ("E_star", "E0"), ("R_empty", "E0"))
 BOOTSTRAP = 10000
 SEED = 20260914
 
 
-def contexts(config: ExperimentConfig) -> dict[str, str]:
-    promotion = R_EMPTY_DIR / "promotion.json"
-    winner = R_EMPTY_DIR / "winner.md"
+def _optimized_context(directory: Path, label: str, relaunch: str) -> str:
+    """Load an optimizer winner, refusing one promoted from an incomplete candidate pool."""
+    winner = directory / "winner.md"
+    promotion = directory / "promotion.json"
     if not winner.exists():
-        raise SystemExit(
-            f"Missing {winner}. Run the R-empty optimization first:\n"
-            "  uv run python scripts/run_e1_matrix.py --method reflective --seed 11 "
-            "--run-tag _empty --config config/v2_rempty.toml --protocol-hash <hash>"
-        )
+        raise SystemExit(f"Missing {winner}. Run the {label} optimization first:\n  {relaunch}")
     meta = json.loads(promotion.read_text(encoding="utf-8"))
     if not meta.get("full_schedule"):
         raise SystemExit(
-            f"R-empty ran a short screen ({meta.get('screen_candidates_evaluated')} slots). "
+            f"{label} ran a short screen ({meta.get('screen_candidates_evaluated')} slots). "
             "A winner promoted from an incomplete pool is not a valid artifact; fix the "
             "cause, delete the run directory, and rerun before comparing anything to it."
         )
+    return winner.read_text(encoding="utf-8").strip()
+
+
+def contexts(config: ExperimentConfig) -> dict[str, str]:
     return {
-        "R_empty": winner.read_text(encoding="utf-8").strip(),
+        "R_empty": _optimized_context(
+            R_EMPTY_DIR, "R-empty",
+            "uv run python scripts/run_e1_matrix.py --method reflective --seed 11 "
+            "--run-tag _empty --config config/v2_rempty.toml --protocol-hash <hash>",
+        ),
+        "R_E0": _optimized_context(
+            R_E0_DIR, "R-E0 matched",
+            "uv run python scripts/run_e1_matrix.py --method reflective --seed 11 "
+            "--run-tag _e0match --config config/v2_pilot.toml --protocol-hash <hash>",
+        ),
         "E0": config.paths.experience_e0.read_text(encoding="utf-8").strip(),
         "E_star": config.paths.experience_e_star.read_text(encoding="utf-8").strip(),
     }
@@ -226,13 +252,16 @@ def run(args: argparse.Namespace) -> None:
                     "does not, the apparatus is not measuring what it measured in round 1 and "
                     "the other two comparisons carry no weight."
                 ),
-                "R_empty_vs_E0": (
-                    "A positive result means a context learned with no human input beats one "
-                    "distilled from 200 patent routes."
+                "R_empty_vs_R_E0": (
+                    "Primary. Same operator, schedule, cap and optimizer seed; only the seed "
+                    "context differs. A null means the human-distilled starting point added "
+                    "nothing once both were optimised, which is the direct form of the "
+                    "project's central reading."
                 ),
-                "R_empty_vs_E_star": (
-                    "A null here means the human-distilled seed added nothing once the context "
-                    "was optimised, which is the direct form of the project's central reading."
+                "R_empty_vs_E0": (
+                    "Descriptive only. E0 was never optimised and is 736 tokens against "
+                    "R_empty's 318, so any difference confounds seed provenance with "
+                    "optimisation and with length."
                 ),
                 "scope": (
                     "Artifact claims about three specific texts. Not a method claim: that would "
