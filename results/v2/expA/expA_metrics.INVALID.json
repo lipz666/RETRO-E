@@ -1,0 +1,81 @@
+{
+  "comparisons": {
+    "R_empty_vs_E0": {
+      "decided_by_validity_rule": 21,
+      "losses": 12,
+      "net_win_rate": -0.17647058823529413,
+      "pairs": 21,
+      "target_cluster_95ci": [
+        -0.5882352941176471,
+        0.29411764705882354
+      ],
+      "targets": 17,
+      "ties": 0,
+      "wins": 9
+    },
+    "R_empty_vs_R_E0": {
+      "decided_by_validity_rule": 20,
+      "losses": 10,
+      "net_win_rate": -0.1388888888888889,
+      "pairs": 20,
+      "target_cluster_95ci": [
+        -0.5833333333333334,
+        0.3055555555555556
+      ],
+      "targets": 18,
+      "ties": 2,
+      "wins": 8
+    }
+  },
+  "context_locked_tokens": {
+    "E0": 736,
+    "E_star": 755,
+    "R_E0": 621,
+    "R_empty": 318
+  },
+  "context_sha256": {
+    "E0": "183f9018fdae2555720e49d1f65842519e033a089dfb6eab03428396d8ba88e4",
+    "E_star": "5fd7566a40e3076275e8845c2b65e92914f72562a5c37bf4b4fbad4a1bbaf79a",
+    "R_E0": "002fdea816093e3c15400d5b8de4ef37034321c43018ed0b3b6f5939c1ce372d",
+    "R_empty": "1b6200215380846ca882fd5022c20ee7a1a1c9e51014dbe04312341f548f06ed"
+  },
+  "created_at": "2026-09-14T09:10:11.748271+00:00",
+  "generator": "gemini-3.8-flash-high",
+  "interpretation": {
+    "R_empty_vs_E0": "Descriptive only. E0 was never optimised and is 736 tokens against R_empty's 318, so any difference confounds seed provenance with optimisation and with length.",
+    "R_empty_vs_R_E0": "Primary. Same operator, schedule, cap and optimizer seed; only the seed context differs. A null means the human-distilled starting point added nothing once both were optimised, which is the direct form of the project's central reading.",
+    "positive_control": "E_star vs E0 should reproduce round-1 H2 at roughly +0.13 to +0.14. If it does not, the apparatus is not measuring what it measured in round 1 and the other two comparisons carry no weight.",
+    "scope": "Artifact claims about three specific texts. Not a method claim: that would need many independent optimization runs."
+  },
+  "judge": "gemini-3.7-flash-high",
+  "phase": "v2_pilot",
+  "protocol_sha256": "ca5da626f5cc79288aa9db3c686aa5d23765b2322ecd801d79c5df32acca21a5",
+  "question": "Is the useful experience self-derived, or transcribed human chemistry?",
+  "samples_per_target": 2,
+  "stage": "experiment_A",
+  "targets": 200,
+  "targets_file_sha256": "11c51273b8ebf7683d7fc86fb6f43b0831b36eabee6ef60bce54a93787d3762c",
+  "validity_by_condition": {
+    "E0": {
+      "generations": 399,
+      "invalid": 9,
+      "invalid_rate": 0.022556390977443608
+    },
+    "E_star": {
+      "generations": 112,
+      "invalid": 0,
+      "invalid_rate": 0.0
+    },
+    "R_E0": {
+      "generations": 399,
+      "invalid": 10,
+      "invalid_rate": 0.02506265664160401
+    },
+    "R_empty": {
+      "generations": 400,
+      "invalid": 12,
+      "invalid_rate": 0.03
+    }
+  },
+  "votes_per_pair": 1
+}
