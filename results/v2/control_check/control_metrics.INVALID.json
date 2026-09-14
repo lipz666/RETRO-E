@@ -1,0 +1,21 @@
+{
+  "cluster_95ci": [
+    -1.0,
+    -0.25
+  ],
+  "created_at": "2026-09-14T13:58:23.786444+00:00",
+  "decided_by_validity_rule": 5,
+  "design": "round 1 Stage-5 exactly: 100 test targets, 3 samples, 3 votes",
+  "generator": "gemini-3.8-flash-high",
+  "judge": "gemini-3.7-flash-high",
+  "net_win_rate": -0.75,
+  "pairs": 5,
+  "protocol_sha256": "533a955fe6b2d7132b8dae35e7e0d705863070a76255b0fa3ae7d4bd33e153fc",
+  "reading": "Reproducing +0.13 to +0.14 points at the new target set as the cause of experiment A's control failure. A null points at the generator, which is what the model-specificity reading predicts.",
+  "round1_reference": {
+    "cross_judge_luna": 0.13,
+    "stage5_gemini_judge": 0.14
+  },
+  "stage": "control_check",
+  "targets": 4
+}
