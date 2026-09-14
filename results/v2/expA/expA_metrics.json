@@ -1,0 +1,94 @@
+{
+  "comparisons": {
+    "E_star_vs_E0": {
+      "decided_by_validity_rule": 16,
+      "losses": 167,
+      "net_win_rate": 0.06,
+      "pairs": 397,
+      "target_cluster_95ci": [
+        -0.0375,
+        0.1525
+      ],
+      "targets": 200,
+      "ties": 42,
+      "wins": 188
+    },
+    "R_empty_vs_E0": {
+      "decided_by_validity_rule": 22,
+      "losses": 170,
+      "net_win_rate": -0.005,
+      "pairs": 399,
+      "target_cluster_95ci": [
+        -0.095,
+        0.0875
+      ],
+      "targets": 200,
+      "ties": 60,
+      "wins": 169
+    },
+    "R_empty_vs_R_E0": {
+      "decided_by_validity_rule": 20,
+      "losses": 206,
+      "net_win_rate": -0.145,
+      "pairs": 398,
+      "target_cluster_95ci": [
+        -0.2425,
+        -0.045
+      ],
+      "targets": 200,
+      "ties": 46,
+      "wins": 146
+    }
+  },
+  "context_locked_tokens": {
+    "E0": 736,
+    "E_star": 755,
+    "R_E0": 621,
+    "R_empty": 318
+  },
+  "context_sha256": {
+    "E0": "183f9018fdae2555720e49d1f65842519e033a089dfb6eab03428396d8ba88e4",
+    "E_star": "5fd7566a40e3076275e8845c2b65e92914f72562a5c37bf4b4fbad4a1bbaf79a",
+    "R_E0": "002fdea816093e3c15400d5b8de4ef37034321c43018ed0b3b6f5939c1ce372d",
+    "R_empty": "1b6200215380846ca882fd5022c20ee7a1a1c9e51014dbe04312341f548f06ed"
+  },
+  "created_at": "2026-09-14T13:28:58.797587+00:00",
+  "generator": "gemini-3.8-flash-high",
+  "interpretation": {
+    "R_empty_vs_E0": "Descriptive only. E0 was never optimised and is 736 tokens against R_empty's 318, so any difference confounds seed provenance with optimisation and with length.",
+    "R_empty_vs_R_E0": "Primary. Same operator, schedule, cap and optimizer seed; only the seed context differs. A null means the human-distilled starting point added nothing once both were optimised, which is the direct form of the project's central reading.",
+    "positive_control": "E_star vs E0 should reproduce round-1 H2 at roughly +0.13 to +0.14. If it does not, the apparatus is not measuring what it measured in round 1 and the other two comparisons carry no weight.",
+    "scope": "Artifact claims about three specific texts. Not a method claim: that would need many independent optimization runs."
+  },
+  "judge": "gemini-3.7-flash-high",
+  "phase": "v2_pilot",
+  "protocol_sha256": "ca5da626f5cc79288aa9db3c686aa5d23765b2322ecd801d79c5df32acca21a5",
+  "question": "Is the useful experience self-derived, or transcribed human chemistry?",
+  "samples_per_target": 2,
+  "stage": "experiment_A",
+  "targets": 200,
+  "targets_file_sha256": "11c51273b8ebf7683d7fc86fb6f43b0831b36eabee6ef60bce54a93787d3762c",
+  "validity_by_condition": {
+    "E0": {
+      "generations": 400,
+      "invalid": 10,
+      "invalid_rate": 0.025
+    },
+    "E_star": {
+      "generations": 398,
+      "invalid": 7,
+      "invalid_rate": 0.017587939698492462
+    },
+    "R_E0": {
+      "generations": 400,
+      "invalid": 10,
+      "invalid_rate": 0.025
+    },
+    "R_empty": {
+      "generations": 400,
+      "invalid": 12,
+      "invalid_rate": 0.03
+    }
+  },
+  "votes_per_pair": 1
+}
